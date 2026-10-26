@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+
+<html class="light" lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><title>IncerNews - Beranda</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "outline": "#6d7a73", "on-primary-fixed-variant": "#00513c", "primary-fixed": "#87f7cd", "secondary-fixed-dim": "#88ceff", "surface-variant": "#dae2fd", "on-secondary-fixed": "#001e2e", "tertiary-container": "#d83739", "primary": "#00694e", "surface-bright": "#faf8ff", "secondary": "#006590", "on-primary-container": "#f5fff8", "on-secondary-fixed-variant": "#004c6d", "secondary-fixed": "#c8e6ff", "on-secondary": "#ffffff", "on-tertiary-fixed-variant": "#930014", "surface": "#faf8ff", "on-surface-variant": "#3d4943", "outline-variant": "#bccac2", "on-tertiary-fixed": "#410004", "surface-dim": "#d2d9f4", "error-container": "#ffdad6", "surface-container-high": "#e2e7ff", "secondary-container": "#88ceff", "tertiary": "#b41b24", "surface-container-highest": "#dae2fd", "on-error": "#ffffff", "on-primary": "#ffffff", "on-primary-fixed": "#002116", "primary-fixed-dim": "#6adbb1", "surface-container-lowest": "#ffffff", "on-surface": "#131b2e", "inverse-primary": "#6adbb1", "on-background": "#131b2e", "on-tertiary-container": "#fffbff", "tertiary-fixed-dim": "#ffb3ae", "inverse-surface": "#283044", "on-error-container": "#93000a", "tertiary-fixed": "#ffdad7", "primary-container": "#008563", "surface-container-low": "#f2f3ff", "on-secondary-container": "#00587e", "inverse-on-surface": "#eef0ff", "error": "#ba1a1a", "surface-container": "#eaedff", "surface-tint": "#006c50", "background": "#faf8ff", "on-tertiary": "#ffffff" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "gutter-tablet": "1.25rem", "margin": "2rem", "space-xl": "2.5rem", "space-sm": "0.5rem", "margin-mobile": "1rem", "space-md": "1rem", "gutter": "1.5rem", "space-lg": "1.5rem", "margin-tablet": "1.5rem", "gutter-mobile": "1rem", "space-xs": "0.25rem" }, fontFamily: { "body-lg": ["Montserrat"], "headline-xl-mobile": ["Montserrat"], "lead-paragraph": ["Montserrat"], "headline-sm": ["Montserrat"], "headline-md": ["Montserrat"], "caption": ["Montserrat"], "body-sm": ["Montserrat"], "display-hero": ["Montserrat"], "label-md": ["Montserrat"], "body-md": ["Montserrat"], "headline-xl": ["Montserrat"], "headline-lg": ["Montserrat"], "display-hero-mobile": ["Montserrat"], "label-caps": ["Montserrat"] }, fontSize: { "body-lg": ["17px", { lineHeight: "28px", letterSpacing: "-0.005em", fontWeight: "400" }], "headline-xl-mobile": ["28px", { lineHeight: "34px", letterSpacing: "-0.015em", fontWeight: "800" }], "lead-paragraph": ["20px", { lineHeight: "32px", letterSpacing: "-0.01em", fontWeight: "500" }], "headline-sm": ["18px", { lineHeight: "24px", letterSpacing: "-0.01em", fontWeight: "700" }], "headline-md": ["22px", { lineHeight: "30px", letterSpacing: "-0.015em", fontWeight: "700" }], "caption": ["12px", { lineHeight: "16px", letterSpacing: "0.01em", fontWeight: "500" }], "body-sm": ["13px", { lineHeight: "20px", letterSpacing: "0em", fontWeight: "400" }], "display-hero": ["56px", { lineHeight: "64px", letterSpacing: "-0.03em", fontWeight: "800" }], "label-md": ["14px", { lineHeight: "18px", letterSpacing: "0em", fontWeight: "600" }], "body-md": ["15px", { lineHeight: "24px", letterSpacing: "0em", fontWeight: "400" }], "headline-xl": ["40px", { lineHeight: "48px", letterSpacing: "-0.025em", fontWeight: "800" }], "headline-lg": ["30px", { lineHeight: "38px", letterSpacing: "-0.02em", fontWeight: "700" }], "display-hero-mobile": ["34px", { lineHeight: "40px", letterSpacing: "-0.02em", fontWeight: "800" }], "label-caps": ["11px", { lineHeight: "14px", letterSpacing: "0.08em", fontWeight: "700" }] } } } };</script><style>@layer base { html, body { width: 100%; margin: 0; padding: 0; min-height: 100%; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; } .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }</style></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-36 flex flex-col justify-between"><div class="h-14 px-gutter-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm"><button aria-label="Menu Kategori" class="min-w-[44px] min-h-[44px] flex items-center justify-center text-on-surface rounded-lg hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-[24px]">menu</span></button><a class="flex items-center gap-space-xs" data-path="beranda" href="#"><span class="font-headline-md text-headline-md tracking-tight font-extrabold text-primary">Incer<span class="text-secondary">News</span></span></a><span class="inline-flex items-center px-2 py-0.5 rounded-full bg-tertiary text-on-tertiary font-label-caps text-label-caps uppercase tracking-wider animate-pulse">Live</span></div><div class="flex items-center gap-space-xs"><a aria-label="Pencarian Berita" class="min-w-[44px] min-h-[44px] flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" data-path="indeks-cari" href="#"><span class="material-symbols-outlined text-[22px]">search</span></a><a aria-label="Disimpan" class="min-w-[44px] min-h-[44px] flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors" data-path="simpan-baca-nanti" href="#"><span class="material-symbols-outlined text-[22px]">bookmark</span></a><a aria-label="Profil Pembaca" class="min-w-[44px] min-h-[44px] flex items-center justify-center" data-path="akun-redaksi" href="#"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></a></div></div><div class="h-11 px-gutter-mobile flex items-center overflow-x-auto no-scrollbar gap-space-sm"><a class="shrink-0 px-3 py-1 rounded-full bg-surface-container-low text-on-surface-variant font-label-caps text-label-caps uppercase hover:bg-primary-container hover:text-on-primary-container transition-all" data-path="opini" href="#">Opini</a><a class="shrink-0 px-3 py-1 rounded-full bg-surface-container-low text-on-surface-variant font-label-caps text-label-caps uppercase hover:bg-primary-container hover:text-on-primary-container transition-all" data-path="nasional" href="#">Nasional</a><a class="shrink-0 px-3 py-1 rounded-full bg-surface-container-low text-on-surface-variant font-label-caps text-label-caps uppercase hover:bg-primary-container hover:text-on-primary-container transition-all" data-path="daerah" href="#">Daerah</a><a class="shrink-0 px-3 py-1 rounded-full bg-surface-container-low text-on-surface-variant font-label-caps text-label-caps uppercase hover:bg-primary-container hover:text-on-primary-container transition-all" data-path="liputan-khusus" href="#">Liputan Khusus</a><a class="shrink-0 px-3 py-1 rounded-full bg-surface-container-low text-on-surface-variant font-label-caps text-label-caps uppercase hover:bg-primary-container hover:text-on-primary-container transition-all" data-path="for-her" href="#">For Her</a></div><div class="h-11 bg-secondary text-on-secondary px-gutter-mobile flex items-center gap-space-sm overflow-hidden"><div class="shrink-0 flex items-center gap-1 bg-tertiary text-on-tertiary px-2 py-0.5 rounded"><span class="material-symbols-outlined text-[14px]">bolt</span><span class="font-label-caps text-label-caps uppercase tracking-wider font-bold">Breaking</span></div><div class="truncate font-body-sm text-body-sm text-on-secondary font-medium"><span class="opacity-90">Sidang Paripurna Mengesahkan RUU Konservasi Lingkungan Hidup Nasional Terbaru</span></div></div></div></header><main class="flex flex-col relative w-full pt-36 pb-32 bg-surface"><div class="flex flex-col w-full">
+<!-- Interactive Category Filter Chips -->
+<section class="w-full px-gutter-mobile py-space-sm bg-surface-container-low shadow-sm">
+<div class="flex items-center gap-space-xs overflow-x-auto no-scrollbar py-0.5">
+<button class="chip-filter active shrink-0 px-3.5 py-1.5 rounded-full bg-primary text-on-primary font-label-caps text-label-caps uppercase transition-all shadow-sm" data-category="all">Semua</button>
+<button class="chip-filter shrink-0 px-3.5 py-1.5 rounded-full bg-surface-container-highest text-on-surface-variant font-label-caps text-label-caps uppercase transition-all hover:bg-primary-fixed hover:text-on-primary-fixed" data-category="nasional">Nasional</button>
+<button class="chip-filter shrink-0 px-3.5 py-1.5 rounded-full bg-surface-container-highest text-on-surface-variant font-label-caps text-label-caps uppercase transition-all hover:bg-primary-fixed hover:text-on-primary-fixed" data-category="daerah">Daerah</button>
+<button class="chip-filter shrink-0 px-3.5 py-1.5 rounded-full bg-surface-container-highest text-on-surface-variant font-label-caps text-label-caps uppercase transition-all hover:bg-primary-fixed hover:text-on-primary-fixed" data-category="opini">Opini</button>
+<button class="chip-filter shrink-0 px-3.5 py-1.5 rounded-full bg-surface-container-highest text-on-surface-variant font-label-caps text-label-caps uppercase transition-all hover:bg-primary-fixed hover:text-on-primary-fixed" data-category="khusus">Liputan Khusus</button>
+<button class="chip-filter shrink-0 px-3.5 py-1.5 rounded-full bg-surface-container-highest text-on-surface-variant font-label-caps text-label-caps uppercase transition-all hover:bg-primary-fixed hover:text-on-primary-fixed" data-category="for-her">For Her</button>
+</div>
+</section>
+<!-- Live Pulse Alert Strip -->
+<div class="mx-gutter-mobile mt-space-sm rounded-xl bg-surface-container-high px-3 py-2 flex items-center justify-between gap-space-sm shadow-sm overflow-hidden">
+<div class="flex items-center gap-2 min-w-0">
+<span class="relative flex h-2.5 w-2.5 shrink-0">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-tertiary"></span>
+</span>
+<span class="px-1.5 py-0.5 rounded bg-tertiary text-on-tertiary font-label-caps text-label-caps uppercase tracking-wider shrink-0">Live Update</span>
+<p class="font-body-sm text-body-sm text-on-surface truncate font-medium">Pemerintah Rilis Protokol Transformasi Digital Sektor Perbankan 2025</p>
+</div>
+<span class="material-symbols-outlined text-secondary shrink-0 text-[18px]">bolt</span>
+</div>
+<!-- Hero Headline Story Card -->
+<article class="mx-gutter-mobile mt-space-md rounded-xl bg-surface-container-lowest overflow-hidden shadow-md flex flex-col group active:scale-[0.99] transition-transform duration-150">
+<div class="relative w-full aspect-[16/9] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" data-alt="High-angle drone view of vast green solar farm with wind turbines spinning gracefully along rolling hills at sunrise, warm sunflare illuminating modern renewable energy infrastructure, editorial photojournalism style, natural atmospheric teal and deep sky tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7NXupn8uZeD-1sCI3yZOzwktERaPJTDPwiFH_i1hrhnEtMQ5apkk9kpx42RECoLEFPaAuPGHEXSYuiLc6HYZq9rs06TrrKyEoJlRaTMaZyB-__19TqzD4tu4KiTbRUouE37d6SPpr_7ZZjQa23OjpA9g1zn5HJM63HbfZIHbArJ0wgZWOz0MU-GG4o3aiEYclqSbSXHES5Uo-s642_OyfikSBxzkDxHp37Z2Kmw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+<!-- Badges on image -->
+<div class="absolute top-3 left-3 flex items-center gap-1.5">
+<span class="px-2.5 py-1 rounded-full bg-secondary text-on-secondary font-label-caps text-label-caps uppercase tracking-wider shadow">Nasional</span>
+<span class="px-2 py-0.5 rounded-full bg-black/40 backdrop-blur-md text-white font-caption text-caption flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px] text-primary-fixed">schedule</span> 5 min baca
+        </span>
+</div>
+<button aria-label="Simpan Berita Utama" class="save-btn absolute top-3 right-3 min-w-[44px] min-h-[44px] rounded-full bg-black/40 backdrop-blur-md text-white flex items-center justify-center transition-colors active:scale-90">
+<span class="material-symbols-outlined text-[20px]">bookmark</span>
+</button>
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-white/90">
+<span class="font-caption text-caption flex items-center gap-1 font-medium">
+<span class="material-symbols-outlined text-[14px] text-primary-fixed">person</span> Hendra Wijaya
+        </span>
+<span class="font-caption text-caption text-white/70">15 Menit Lalu</span>
+</div>
+</div>
+<div class="p-4 flex flex-col gap-2">
+<h1 class="font-headline-xl-mobile text-headline-xl-mobile text-on-surface font-extrabold tracking-tight leading-tight">
+        Transisi Energi Bersih 2030: Strategi Nasional dan Percepatan Infrastruktur Ramah Lingkungan
+      </h1>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">
+        Kementerian ESDM meresmikan peta jalan baru guna memangkas emisi karbon lewat dekarbonisasi industri primer dan investasi jaringan transmisi pintar antar-pulau.
+      </p>
+<div class="mt-2 pt-2 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<button class="share-btn flex items-center gap-1 min-h-[44px] px-2 text-on-surface-variant active:text-primary transition-colors" data-title="Transisi Energi Bersih 2030">
+<span class="material-symbols-outlined text-[18px]">share</span>
+<span class="font-caption text-caption font-semibold">Bagikan</span>
+</button>
+<button class="like-btn flex items-center gap-1 min-h-[44px] px-2 text-on-surface-variant active:text-tertiary transition-colors">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+<span class="font-caption text-caption font-semibold like-count">248</span>
+</button>
+</div>
+<a class="inline-flex items-center gap-1 min-h-[44px] px-3 font-label-md text-label-md text-primary font-bold" href="#">
+          Baca Lengkap <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Tren Terpopuler 24 Jam (Ranked List) -->
+<section class="mt-space-lg mx-gutter-mobile">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-6 rounded bg-primary"></span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Tren Terpopuler 24 Jam</h2>
+</div>
+<span class="font-caption text-caption text-secondary font-semibold">Realtime Metric</span>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-3 shadow-sm flex flex-col gap-2">
+<!-- Item 01 -->
+<a class="flex items-start gap-3 p-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors" href="#">
+<span class="font-headline-md text-headline-md font-extrabold text-primary shrink-0 w-7">01</span>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center gap-2 mb-1">
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-caps text-label-caps uppercase">Finansial</span>
+<span class="font-caption text-caption text-on-surface-variant">• 23k dibaca</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold line-clamp-2">
+            Rupiah Menguat Tajam Pasca Kebijakan Ekspor Komoditas Baru Bank Indonesia
+          </h3>
+<span class="font-caption text-caption text-outline mt-1">32 Menit Lalu</span>
+</div>
+</a>
+<!-- Item 02 -->
+<a class="flex items-start gap-3 p-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors" href="#">
+<span class="font-headline-md text-headline-md font-extrabold text-secondary shrink-0 w-7">02</span>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center gap-2 mb-1">
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-caps text-label-caps uppercase">Teknologi</span>
+<span class="font-caption text-caption text-on-surface-variant">• 19k dibaca</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold line-clamp-2">
+            Pusat Data AI Ramah Lingkungan Mulai Dibangun di Kawasan Industri Batam
+          </h3>
+<span class="font-caption text-caption text-outline mt-1">1 Jam Lalu</span>
+</div>
+</a>
+<!-- Item 03 -->
+<a class="flex items-start gap-3 p-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors" href="#">
+<span class="font-headline-md text-headline-md font-extrabold text-on-surface-variant shrink-0 w-7">03</span>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center gap-2 mb-1">
+<span class="px-2 py-0.5 rounded-full bg-surface-variant text-on-surface-variant font-label-caps text-label-caps uppercase">Daerah</span>
+<span class="font-caption text-caption text-on-surface-variant">• 14k dibaca</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold line-clamp-2">
+            Revitalisasi Jalur Kereta Wisata Ambarawa-Magelang Resmi Masuk Proyek Strategis
+          </h3>
+<span class="font-caption text-caption text-outline mt-1">2 Jam Lalu</span>
+</div>
+</a>
+<!-- Item 04 -->
+<a class="flex items-start gap-3 p-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors" href="#">
+<span class="font-headline-md text-headline-md font-extrabold text-on-surface-variant shrink-0 w-7">04</span>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center gap-2 mb-1">
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-caps text-label-caps uppercase">Sosial</span>
+<span class="font-caption text-caption text-on-surface-variant">• 11k dibaca</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold line-clamp-2">
+            Survei Kualitas Hidup Perkotaan: Kota Mana Paling Nyaman Ditinggali Pekerja Muda?
+          </h3>
+<span class="font-caption text-caption text-outline mt-1">3 Jam Lalu</span>
+</div>
+</a>
+</div>
+</section>
+<!-- Editor's Choice Carousel -->
+<section class="mt-space-lg">
+<div class="px-gutter-mobile flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">verified</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Pilihan Redaksi</h2>
+</div>
+<span class="font-caption text-caption text-on-surface-variant flex items-center gap-1">
+        Geser <span class="material-symbols-outlined text-[14px]">swipe</span>
+</span>
+</div>
+<!-- Horizontal Swipe Container -->
+<div class="flex gap-3 overflow-x-auto no-scrollbar px-gutter-mobile pb-2">
+<!-- Carousel Item 1 -->
+<article class="shrink-0 w-72 bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<div class="relative w-full aspect-[16/10] bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Close up of traditional Indonesian batik artisan working intricately with canting wax pen, warm studio light falling across detailed floral textile motifs, rich deep indigo and sienna colors, modern photo essay aesthetics" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqn4W0h3BbmtZXCWMBtmVTsn-8Vkz73CNEeR6AP9m3VSAAiGaHcd_33Wmh2UtqliMPFd6uvAZeHFgPD4ZlOCzEVqwBAIOZykVEOkry3We9bUAE1Fhrb0ctRZ3EtEejXF0-Ev02ynAcRCU4UmfwEjUj_-o-84n6P4gWYD-GKBDV5PSUvgKpjHKgbQvHu09b0-c1Jt1h4tPcGVrNFydyQN0dOjhVvooENYrYmS5lTQ"/>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-primary text-on-primary font-label-caps text-label-caps uppercase shadow">Kurasi Budaya</span>
+</div>
+<div class="p-3.5 flex flex-col flex-1 justify-between gap-2">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold line-clamp-2">
+              Kisah Generasi Ketiga Pengrajin Wastra Tradisional Menembus Pasar Milan
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">
+              Menyatukan metode celup alami ratusan tahun dengan desain siluet kontemporer untuk fesyen berkelanjutan.
+            </p>
+</div>
+<div class="flex items-center justify-between text-outline font-caption text-caption pt-2">
+<span>Redaksi Feature</span>
+<span>4 min baca</span>
+</div>
+</div>
+</article>
+<!-- Carousel Item 2 -->
+<article class="shrink-0 w-72 bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<div class="relative w-full aspect-[16/10] bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Modern indoor vertical farm warehouse glowing with purple LED spectra, lush green organic lettuce heads stacked on hydroponic racks, robotic monitoring arm gliding smoothly, clean technological agricultural framing" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAAADgLdr1B1UDJMAqfeMfDO6jtlV826qNMn99sEVxS45y7jqp4BQgon-ryPJljl8HtrVoOtUhbIFNxkpjZkB9BnWM4aTI95pGI6asy_R0t2ibZx4h73LEp0oZG7kecnHEHjnN-modK4NzxMkWpWlTyN3P-OUSgOeJFpkA9Rn6qL0mlSvijg9_vQ1cLAssMElA2R7K3giPLeBGszB_sRiH-1Giy6v-5ZxRXWOovQ"/>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-secondary text-on-secondary font-label-caps text-label-caps uppercase shadow">Ketahanan Pangan</span>
+</div>
+<div class="p-3.5 flex flex-col flex-1 justify-between gap-2">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold line-clamp-2">
+              Lumbung Pangan Masa Depan: Bertani Presisi di Jantung Megapolitan Jakarta
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">
+              Inovasi vertical farming perkotaan mampu menghemat 90 persen pemakaian air dan memotong rantai pasok sayuran.
+            </p>
+</div>
+<div class="flex items-center justify-between text-outline font-caption text-caption pt-2">
+<span>Tim Investigasi</span>
+<span>6 min baca</span>
+</div>
+</div>
+</article>
+<!-- Carousel Item 3 -->
+<article class="shrink-0 w-72 bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<div class="relative w-full aspect-[16/10] bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Young Indonesian female cyber security engineer working in dim tech operations center surrounded by glowing multi-monitor dashboards of network traffic graphs, focused professional demeanor, modern teal and navy aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1ijFdLNA6NZQufTDM4stQcIgBwSmToKULOrvjhQhuBjcf0iWcdO2alpdOXtVte0GKZvwdhKuOlBs-Puwr0bZnHuKj5MpJHFDpbMdAnj12vwHafq3m2fHqCfX_q2pVkZi7uQ6ijFb96Qp4_LndxQS5z2K1oKiTA8M__iTTLQbgYG9DrdHwSWzlzCH7Kj-RJuBcnGb2ppsv_JnTNoQdv45jyHsQ5cYL_IjT2nmIQg"/>
+<span class="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-primary-container text-on-primary-container font-label-caps text-label-caps uppercase shadow">Sains &amp; Siber</span>
+</div>
+<div class="p-3.5 flex flex-col flex-1 justify-between gap-2">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold line-clamp-2">
+              Membentengi Kedaulatan Data: Menilik Kesiapan Talenta Siber Muda Indonesia
+            </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 mt-1">
+              Tantangan arsitektur keamanan awan dan strategi membina analis forensik digital domestik berdaya saing global.
+            </p>
+</div>
+<div class="flex items-center justify-between text-outline font-caption text-caption pt-2">
+<span>Opini Ahli</span>
+<span>5 min baca</span>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- Feed Kategori: Nasional & Daerah (Horizontal Split Cards) -->
+<section class="mt-space-lg mx-gutter-mobile flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-6 rounded bg-secondary"></span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Kilas Nasional &amp; Daerah</h2>
+</div>
+<a class="font-label-md text-label-md text-secondary font-semibold min-h-[44px] flex items-center" href="#">Lihat Semua</a>
+</div>
+<!-- Compact Card 1 -->
+<article class="bg-surface-container-lowest rounded-xl p-3 shadow-sm flex gap-3 items-center">
+<div class="w-20 h-20 rounded-lg overflow-hidden shrink-0 bg-surface-container relative">
+<img class="w-full h-full object-cover" data-alt="Aerial cityscape of Nusantara IKN core area showing government building under golden sunset, lush rainforest surrounding green architectural structure, documentary photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuALwDktXYnUpdLei3RRfl0O-wo-XPjOf-Ync7mm6ekLGe_EqOLI0TKXYl7Oy-FYHvHM9DPnGL3i6aASRdbkMtUhNe_R3M2i7LAM7lI0U4XFpUa6XJnxpwEXO7nfCEOH2s3piq8kpbjk50CZgPDBjxhHkShWxzD7yX5OLg6mdIVd-l4Qc-u0Yhv04tGtvZnwedhQa9xgrwextosfbaSQtPyzp62q-ToWrRVtEdc39g"/>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center gap-2 mb-1">
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-caps text-label-caps uppercase">Nasional</span>
+<span class="font-caption text-caption text-outline">3 min baca</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold line-clamp-2">
+          Progres Pembangunan Gedung Legislatif IKN Capai 78 Persen Sesuai Target
+        </h3>
+<div class="flex items-center justify-between mt-1 text-outline font-caption text-caption">
+<span>Biro Kalimantan</span>
+<button class="save-btn min-w-[44px] min-h-[44px] -my-2 -mr-2 flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">bookmark</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Compact Card 2 -->
+<article class="bg-surface-container-lowest rounded-xl p-3 shadow-sm flex gap-3 items-center">
+<div class="w-20 h-20 rounded-lg overflow-hidden shrink-0 bg-surface-container relative">
+<img class="w-full h-full object-cover" data-alt="Traditional fishing boats anchored along vibrant modern coastal port in East Java, calm blue ocean water with clean logistics container cranes in distant horizon, bright daylight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAdCThLWF-hI7CdVbtiDePqEt30c9i1T30UxcVdIutjdoZImsrxodKnAaWkYMvblvJrZfss9n89WAs8HDFYANVAsnsOI1A6S7njh5J6RwFeLerTH5Jp4ZabJm_4urBGMCxvaVOmAbR0cg8PHqPgHBtuyhavVNfMAmfq9V6ooFXWUsIVNWVR5b26VeeBBPdZbb-hlhWrUil6TdmZxaL5L_M9ubnvWLRoNNztcIggw"/>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center gap-2 mb-1">
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed-variant font-label-caps text-label-caps uppercase">Daerah</span>
+<span class="font-caption text-caption text-outline">4 min baca</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold line-clamp-2">
+          Dermaga Logistik Terintegrasi Jawa Timur Siap Dongkrak Efisiensi Distribusi Nelayan
+        </h3>
+<div class="flex items-center justify-between mt-1 text-outline font-caption text-caption">
+<span>Surabaya Desk</span>
+<button class="save-btn min-w-[44px] min-h-[44px] -my-2 -mr-2 flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">bookmark</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Compact Card 3 -->
+<article class="bg-surface-container-lowest rounded-xl p-3 shadow-sm flex gap-3 items-center">
+<div class="w-20 h-20 rounded-lg overflow-hidden shrink-0 bg-surface-container relative">
+<img class="w-full h-full object-cover" data-alt="Indonesian public transportation MRT train car moving along elevated track with Jakarta skyline in morning mist, clean urban infrastructure, editorial lifestyle" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1ODt0ZvwL8zphhSUkoaLixrzCCVZXwrJC0GqEFdeL1jfNlqCiF_APzLiGCMbesvn77PGwB0kraa4hlPf2gM7NGkSyHzkM4y2K75pLAe-XqpycWx7CKsaXV8kjj-jWlWaFFP9Tk4Q6C_c-nTOjFwxk70elfmaxHB18dJw6zHu75BtXArEvmYA2wx-2GohY_yM47rs1KXMTkPkZ1Zh4_gn_wjBlk6nWGJ75PUsT1A"/>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center gap-2 mb-1">
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-caps text-label-caps uppercase">Nasional</span>
+<span class="font-caption text-caption text-outline">5 min baca</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold line-clamp-2">
+          Integrasi Tiket Moda Transportasi Jabodetabek Tahap Akhir Masuki Uji Coba Terbuka
+        </h3>
+<div class="flex items-center justify-between mt-1 text-outline font-caption text-caption">
+<span>Metro Desk</span>
+<button class="save-btn min-w-[44px] min-h-[44px] -my-2 -mr-2 flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">bookmark</span>
+</button>
+</div>
+</div>
+</article>
+</section>
+<!-- Kolom Opini Section (Editorial Thought Leaders) -->
+<section class="mt-space-lg mx-gutter-mobile">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">format_quote</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Kolom Opini &amp; Gagasan</h2>
+</div>
+<a class="font-label-md text-label-md text-primary font-semibold min-h-[44px] flex items-center" href="#">Indeks Kolom</a>
+</div>
+<div class="flex flex-col gap-3">
+<!-- Opini Card 1 -->
+<article class="bg-surface-container-lowest rounded-xl p-4 shadow-sm flex flex-col gap-3">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-full overflow-hidden shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Headshot portrait of a distinguished Indonesian male economics professor in his 50s wearing modern spectacles and navy batik shirt, warm engaging smile, studio backdrop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBC72vD5hxHjXo9deqt1lnfLzlrt9C5Ow6ZjCji7pHWArYbD-BFyu0QTzvls2FlI0BiIg_pkOhD5rrrFLxxmBqpvQQs9uy8OC_ocudHfaRsZQGiwS2sCZ7cWUkfktj_yczq9AfdwwSeIpupRQdrAjnNnVa3iEWE4_OV_eSt9MVS1X3TVhoqRZqay8DJDDI3LcBO3Ax7X0hYrZutf-TQIfjcJOthO-3HNhw-dyOF2g"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Prof. Bambang Prasetyo</span>
+<span class="font-caption text-caption text-outline truncate">Guru Besar Ekonomi Kebijakan Publik</span>
+</div>
+</div>
+<p class="font-lead-paragraph text-body-md text-on-surface italic font-medium relative pl-3 bg-surface-container-low p-3 rounded-lg">
+          “Transformasi fiskal tidak sekadar angka surplus belanja, melainkan seberapa tangkas jaring pengaman menyentuh sektor informal.”
+        </p>
+<div class="flex items-center justify-between text-outline font-caption text-caption">
+<span class="flex items-center gap-1 text-primary font-semibold">
+<span class="material-symbols-outlined text-[16px]">menu_book</span> Baca Esai Lengkap (4 min)
+          </span>
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</div>
+</article>
+<!-- Opini Card 2 -->
+<article class="bg-surface-container-lowest rounded-xl p-4 shadow-sm flex flex-col gap-3">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-full overflow-hidden shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Headshot portrait of an Indonesian woman tech legal expert in her late 30s with confident expression, wearing sleek dark emerald blazer, minimalist modern office background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrsbMOAX05oDgp2zdoXG3rUK1O_DjJC2LOaZ9nsGJK-YVXbqYT90S50fLMQPAPGHVmiPMybZukdKNgBiyScfUopL5d_VQYO8rjAyXMAmhfjTr5sL6V3-NB6NQM5P9WGUb-shMcrT_JNKrjzgWHGM1fCTBwjceTel2K5Z5Da2DWxaO8VC_qeSnblWeJiLpdo96oOgut0c4Avc3Sp1Vf3yHJAIua4VMT1W41mg43EA"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Dr. Nadia Rahmania</span>
+<span class="font-caption text-caption text-outline truncate">Praktisi Hukum Tata Kelola AI &amp; Data</span>
+</div>
+</div>
+<p class="font-lead-paragraph text-body-md text-on-surface italic font-medium relative pl-3 bg-surface-container-low p-3 rounded-lg">
+          “Etika kecerdasan buatan di ranah hukum bukan lagi opsi teoritis, ia adalah pagar pembatas keadilan masa depan.”
+        </p>
+<div class="flex items-center justify-between text-outline font-caption text-caption">
+<span class="flex items-center gap-1 text-primary font-semibold">
+<span class="material-symbols-outlined text-[16px]">menu_book</span> Baca Esai Lengkap (5 min)
+          </span>
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</div>
+</article>
+</div>
+</section>
+<!-- Liputan Khusus: Dark High-Contrast Investigative Block -->
+<section class="mt-space-lg mx-gutter-mobile">
+<div class="rounded-xl bg-inverse-surface text-inverse-on-surface p-4 shadow-md overflow-hidden relative">
+<div class="flex items-center justify-between mb-3">
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-0.5 rounded-full bg-tertiary text-on-tertiary font-label-caps text-label-caps uppercase tracking-wider font-bold">Investigasi Khusus</span>
+<span class="font-caption text-caption text-inverse-on-surface/70">Seri 3 Bagian</span>
+</div>
+<span class="material-symbols-outlined text-inverse-primary text-[20px]">policy</span>
+</div>
+<div class="relative w-full aspect-[16/9] rounded-lg overflow-hidden my-2 bg-black/40">
+<img class="w-full h-full object-cover" data-alt="Moody cinematic investigative photography of illegal mineral mining footprint in deep tropical rainforest clearing, dramatic low key sunset lighting casting deep shadows on excavated terracotta soil, investigative journalism tone" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWRAWvJDWeNeqV-VqIyhmYIUZ3VP7bQ8VAfcxMub8nktPQbAg02Murhs5p1lB4Mj1SP9YkUo7h7nVhFcfxbxGWGf4GMVBEBDeigXp8A12j70MN4V6K7xkoS9ZqTi6MLO4JxSL_5xVuzev6KjCXEjn2dvppQymY6Zu9s9wFwzT0jCgPN0o2IaRcil-tGieHe_e-8EzbBH4nkZrzIEcQtXKZAHLX3JZGmw32JPFy3w"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
+<div class="absolute bottom-2 left-2 right-2 flex items-center justify-between text-white/80 font-caption text-caption">
+<span>Laporan Lapangan Mendalam</span>
+<span>12 min bacaan lengkap</span>
+</div>
+</div>
+<h3 class="font-headline-md text-headline-md text-inverse-on-surface font-extrabold mt-2 leading-tight">
+        Jejak Karbon Tersembunyi di Hulu Pasokan Mineral Kritis Dunia
+      </h3>
+<p class="font-body-sm text-body-sm text-inverse-on-surface/80 mt-1 line-clamp-3">
+        Liputan kolaboratif 4 bulan menelusuri rantai pasok nikel dari pulau-pulau terluar hingga pabrikan baterai global, memotret dampak ekologis nyata masyarakat pesisir.
+      </p>
+<div class="mt-4 pt-3 border-t border-white/10 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-inverse-primary text-[18px]">lock_open</span>
+<span class="font-caption text-caption font-semibold text-inverse-primary">Akses Bebas Redaksi</span>
+</div>
+<a class="px-4 py-2 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-bold inline-flex items-center gap-1 active:bg-primary-container" href="#">
+          Buka Liputan <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Section Feed: For Her (Lifestyle, Empowerment, Wellbeing) -->
+<section class="mt-space-lg mx-gutter-mobile flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-6 rounded bg-tertiary-container"></span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Incer For Her</h2>
+</div>
+<a class="font-label-md text-label-md text-tertiary font-semibold min-h-[44px] flex items-center" href="#">Rubrik Khusus</a>
+</div>
+<!-- For Her Top Story -->
+<article class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex flex-col">
+<div class="relative w-full aspect-[16/9] bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Confident group of Indonesian women entrepreneurs and tech leaders gathered in creative sunlit studio discussing strategies with laptops and sketchbooks, warm aesthetic, modern high-fashion professional attire" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlkv3XSr2vuhrcU9FFMjngWxpG5sF0_VdR8OAboR-GaEq3K_ed0XIV7Fn9eTfealuWKC1VYGlKW1rwgHxF4HxJrRPVB7gfZcOnp9iZsf9hND244n2_1w50VJN8Ppp9y0IIHTkE4dHe92oIrJZ7lqMXQ1VynxF-BwiwIxoSuS7H2EBzaUVA1eYwt6K-8LT8F6ya0eECuCr5qfh1YxSBhwjyrKAAbwjuWRt-lIHpgw"/>
+<span class="absolute top-2 left-2 px-2.5 py-0.5 rounded-full bg-tertiary text-on-tertiary font-label-caps text-label-caps uppercase shadow">Karier &amp; Kepemimpinan</span>
+</div>
+<div class="p-3.5 flex flex-col gap-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold line-clamp-2">
+          Mendobrak Langit-Langit Kaca: Menavigasi Ekosistem Modal Ventura bagi Pendiri Perempuan
+        </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+          Wawancara eksklusif bersama 5 CEO perempuan tentang mengatasi bias pendanaan dan membangun jejaring mentorship yang inklusif.
+        </p>
+<div class="flex items-center justify-between text-outline font-caption text-caption pt-1">
+<span>Oleh Amanda Saraswati</span>
+<div class="flex items-center gap-3">
+<span>5 min baca</span>
+<button class="save-btn min-w-[44px] min-h-[44px] -my-2 flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">bookmark</span>
+</button>
+</div>
+</div>
+</div>
+</article>
+<!-- For Her Mini Card -->
+<article class="bg-surface-container-lowest rounded-xl p-3 shadow-sm flex gap-3 items-center">
+<div class="w-20 h-20 rounded-lg overflow-hidden shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Serene morning wellness routine showing matcha bowl, mindful journaling notebook, and soft morning sunlight pouring onto wooden table, soft pastel aesthetics" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLkPX8U3KRcOOTf4iNF0Gx8KFyoRNEMH_3xJZyD4Pp8XYHi7mAcJ4tEy-XM5ZCEySVtNKJcxJpocNl8-b2NBolofMnO4fikNrqTp08W6pUqT_Ri6j0D60EIWSWcFFzDAAJ2oLR5PX9bkdSkIAtDuQQbgUEyx4bFE6AsA2a-VaAMXo3np55YGEUdmjrmRbzcnMCXEMSn_e7Xojzn63RS6Gvywr3avommMzzotaQ0A"/>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-caps text-label-caps uppercase self-start mb-1">Kesehatan Mental</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-bold line-clamp-2">
+          Mengelola Kelelahan Digital: 5 Ritual Pagi Berkesadaran Tanpa Gangguan Notifikasi
+        </h4>
+<span class="font-caption text-caption text-outline mt-1">3 min baca</span>
+</div>
+</article>
+</section>
+<!-- Newsletter Subscription Banner -->
+<section class="mt-space-xl mx-gutter-mobile mb-4">
+<div class="bg-primary-container text-on-primary-container rounded-xl p-5 shadow-md flex flex-col gap-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary-fixed text-[24px]">mark_email_unread</span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-primary-fixed font-bold">Buletin Pagi Redaksi</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md font-bold text-on-primary-container leading-tight">
+          Ringkasan Berita Terkurasi Setiap Pukul 06.00 WIB
+        </h3>
+<p class="font-body-sm text-body-sm text-on-primary-container/85 mt-1">
+          Bebas bising klikbait. Dapatkan 5 rangkuman isu nasional &amp; ekonomi paling krusial langsung di kotak masuk Anda.
+        </p>
+</div>
+<form class="flex flex-col gap-2 mt-2" id="newsletter-form" onsubmit="event.preventDefault(); handleNewsletter();">
+<div class="relative w-full">
+<input class="w-full h-11 px-3.5 rounded-lg bg-surface text-on-surface font-body-md text-body-md placeholder:text-outline focus:outline-none shadow-sm" id="newsletter-input" placeholder="Masukkan email aktif Anda..." required="" type="email"/>
+</div>
+<button class="min-h-[44px] w-full rounded-lg bg-secondary text-on-secondary font-label-md text-label-md font-bold flex items-center justify-center gap-1.5 shadow active:scale-[0.98] transition-transform" id="newsletter-btn" type="submit">
+<span>Langganan Sekarang</span>
+<span class="material-symbols-outlined text-[18px]">send</span>
+</button>
+</form>
+<div class="hidden rounded-lg bg-primary text-on-primary p-3 flex items-center gap-2 font-body-sm text-body-sm" id="newsletter-success">
+<span class="material-symbols-outlined text-[20px]">check_circle</span>
+<span>Terima kasih! Cek email Anda untuk konfirmasi buletin perdana.</span>
+</div>
+<p class="font-caption text-caption text-on-primary-container/70 text-center">
+        Gratis tanpa spam. Anda dapat berhenti berlangganan kapan saja dalam satu klik.
+      </p>
+</div>
+</section>
+</div>
+<script>
+  // Filter Chip Interaction
+  document.querySelectorAll('.chip-filter').forEach(chip => {
+    chip.addEventListener('click', () => {
+      document.querySelectorAll('.chip-filter').forEach(c => {
+        c.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm');
+        c.classList.add('bg-surface-container-highest', 'text-on-surface-variant');
+      });
+      chip.classList.remove('bg-surface-container-highest', 'text-on-surface-variant');
+      chip.classList.add('bg-primary', 'text-on-primary', 'shadow-sm');
+    });
+  });
+
+  // Bookmark Toggle Interaction
+  document.querySelectorAll('.save-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      const icon = btn.querySelector('.material-symbols-outlined');
+      if (icon) {
+        if (icon.textContent === 'bookmark') {
+          icon.textContent = 'bookmark_added';
+          btn.classList.add('text-primary');
+        } else {
+          icon.textContent = 'bookmark';
+          btn.classList.remove('text-primary');
+        }
+      }
+    });
+  });
+
+  // Like Button Counter Interaction
+  document.querySelectorAll('.like-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const icon = btn.querySelector('.material-symbols-outlined');
+      const countEl = btn.querySelector('.like-count');
+      let count = parseInt(countEl.textContent, 10);
+      if (btn.dataset.liked === 'true') {
+        btn.dataset.liked = 'false';
+        countEl.textContent = count - 1;
+        btn.classList.remove('text-tertiary');
+        icon.style.fontVariationSettings = "'FILL' 0";
+      } else {
+        btn.dataset.liked = 'true';
+        countEl.textContent = count + 1;
+        btn.classList.add('text-tertiary');
+        icon.style.fontVariationSettings = "'FILL' 1";
+      }
+    });
+  });
+
+  // Share Micro-interaction
+  document.querySelectorAll('.share-btn').forEach(btn => {
+    btn.addEventListener('click', async () => {
+      const title = btn.dataset.title || 'IncerNews Berita';
+      if (navigator.share) {
+        try {
+          await navigator.share({
+            title: title,
+            url: window.location.href,
+          });
+        } catch (err) {
+          // Fallback or user canceled
+        }
+      } else {
+        navigator.clipboard?.writeText(window.location.href);
+        const originalText = btn.querySelector('span:last-child').textContent;
+        btn.querySelector('span:last-child').textContent = 'Tersalin!';
+        setTimeout(() => {
+          btn.querySelector('span:last-child').textContent = originalText;
+        }, 2000);
+      }
+    });
+  });
+
+  // Newsletter Submission Simulation
+  function handleNewsletter() {
+    const form = document.getElementById('newsletter-form');
+    const successMsg = document.getElementById('newsletter-success');
+    if (form && successMsg) {
+      form.classList.add('hidden');
+      successMsg.classList.remove('hidden');
+    }
+  }
+</script><footer class="mt-space-xl px-gutter-mobile py-space-lg bg-surface-container-low text-on-surface-variant"><div class="flex flex-col gap-space-md"><div class="flex items-center justify-between"><span class="font-headline-sm text-headline-sm text-primary font-bold">Incer<span class="text-secondary">News</span></span><div class="flex items-center gap-space-xs"><a aria-label="Twitter" class="min-w-[44px] min-h-[44px] rounded-full bg-surface flex items-center justify-center text-secondary hover:bg-secondary hover:text-on-secondary transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">share</span></a><a aria-label="RSS Feed" class="min-w-[44px] min-h-[44px] rounded-full bg-surface flex items-center justify-center text-secondary hover:bg-secondary hover:text-on-secondary transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">rss_feed</span></a><a aria-label="Email Redaksi" class="min-w-[44px] min-h-[44px] rounded-full bg-surface flex items-center justify-center text-secondary hover:bg-secondary hover:text-on-secondary transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">mail</span></a></div></div><div class="flex flex-wrap gap-x-space-md gap-y-space-xs font-caption text-caption"><a class="hover:text-primary transition-colors" href="#">Pedoman Siber</a><a class="hover:text-primary transition-colors" href="#">Kode Etik</a><a class="hover:text-primary transition-colors" href="#">Tentang Kami</a><a class="hover:text-primary transition-colors" href="#">Susunan Redaksi</a><a class="hover:text-primary transition-colors" href="#">Disclaimer</a><a class="hover:text-primary transition-colors" href="#">Kontak</a></div><p class="font-caption text-caption text-outline leading-relaxed">© 2025 PT Incer Media Digital. Seluruh hak cipta dilindungi oleh undang-undang pers dan jurnalisme terpercaya.</p></div></footer></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-1px_8px_rgba(0,0,0,0.04)]" data-active-classes="text-primary font-bold"><div class="flex justify-around items-center h-16 px-gutter-mobile"><a aria-current="page" class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] transition-colors text-primary font-bold" data-path="beranda" href="#"><span class="material-symbols-outlined text-[22px]">newspaper</span><span class="font-caption text-caption tracking-tight mt-0.5">Beranda</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] text-on-surface-variant transition-colors" data-path="kategori" href="#"><span class="material-symbols-outlined text-[22px]">grid_view</span><span class="font-caption text-caption tracking-tight mt-0.5">Kategori</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] text-on-surface-variant transition-colors" data-path="indeks-cari" href="#"><span class="material-symbols-outlined text-[22px]">search</span><span class="font-caption text-caption tracking-tight mt-0.5">Cari</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] text-on-surface-variant transition-colors" data-path="simpan-baca-nanti" href="#"><span class="material-symbols-outlined text-[22px]">bookmarks</span><span class="font-caption text-caption tracking-tight mt-0.5">Simpan</span></a><a class="flex flex-col items-center justify-center min-w-[44px] min-h-[44px] text-on-surface-variant transition-colors" data-path="akun-redaksi" href="#"><span class="material-symbols-outlined text-[22px]">account_circle</span><span class="font-caption text-caption tracking-tight mt-0.5">Akun</span></a></div></nav></body></html>

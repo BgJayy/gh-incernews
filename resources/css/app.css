@@ -1,0 +1,97 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'Montserrat', ui-sans-serif, system-ui, sans-serif;
+    --color-primary: #00694e;
+    --color-primary-container: #008563;
+    --color-primary-fixed: #87f7cd;
+    --color-secondary: #006590;
+    --color-secondary-fixed: #c8e6ff;
+    --color-tertiary: #b41b24;
+    --color-on-surface: #131b2e;
+    --color-on-surface-variant: #3d4943;
+    --color-surface: #faf8ff;
+    --color-surface-low: #f2f3ff;
+    --color-surface-lowest: #ffffff;
+    --color-outline: #6d7a73;
+    --color-outline-variant: #bccac2;
+    --color-inverse: #283044;
+    --color-inverse-on: #eef0ff;
+}
+
+.article-body {
+    font-size: 1.0625rem;
+    line-height: 1.75;
+    color: var(--color-on-surface);
+}
+
+.article-body > * + * {
+    margin-top: 1rem;
+}
+
+.article-body h2,
+.article-body h3 {
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.3;
+    margin-top: 1.75rem;
+}
+
+.article-body h2 {
+    font-size: 1.5rem;
+}
+
+.article-body h3 {
+    font-size: 1.25rem;
+}
+
+.article-body a {
+    color: var(--color-primary);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.article-body img,
+.article-body figure {
+    max-width: 100%;
+    height: auto;
+    margin-inline: auto;
+    border-radius: 0.25rem;
+}
+
+.article-body ul,
+.article-body ol {
+    padding-left: 1.25rem;
+}
+
+.article-body ul {
+    list-style: disc;
+}
+
+.article-body ol {
+    list-style: decimal;
+}
+
+.article-body blockquote {
+    background: var(--color-surface-low);
+    border-left: 4px solid var(--color-primary);
+    padding: 1rem 1.25rem;
+    font-style: italic;
+}
+
+.article-body .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+    margin-top: 1.25rem;
+}
+
+.article-body .gallery-item img {
+    width: 100%;
+    height: auto;
+}

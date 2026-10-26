@@ -1,0 +1,368 @@
+{
+  "ok": 60,
+  "fail": 0,
+  "skip": 0,
+  "total": 60,
+  "files": [
+    {
+      "url": "https://incernews.com/wp-content/uploads/2025/04/203c3659-c26f-4574-a9d1-b2ee693a8cda.png",
+      "path": "wp-content/uploads/2025/04/203c3659-c26f-4574-a9d1-b2ee693a8cda.png",
+      "status": "ok",
+      "bytes": 344757
+    },
+    {
+      "url": "https://incernews.com/wp-content/uploads/2025/04/IMG-20240828-WA0051.webp",
+      "path": "wp-content/uploads/2025/04/IMG-20240828-WA0051.webp",
+      "status": "ok",
+      "bytes": 102224
+    },
+    {
+      "url": "https://incernews.com/wp-content/uploads/2025/04/IMG-20240829-WA0017-576x1024-1-169x300.webp",
+      "path": "wp-content/uploads/2025/04/IMG-20240829-WA0017-576x1024-1-169x300.webp",
+      "status": "ok",
+      "bytes": 6276
+    },
+    {
+      "url": "https://incernews.com/wp-content/uploads/2025/04/IMG-20240829-WA0017-576x1024-1.webp",
+      "path": "wp-content/uploads/2025/04/IMG-20240829-WA0017-576x1024-1.webp",
+      "status": "ok",
+      "bytes": 32620
+    },
+    {
+      "url": "https://incernews.com/wp-content/uploads/2025/04/IMG-20240829-WA0018-576x1024-1-169x300.webp",
+      "path": "wp-content/uploads/2025/04/IMG-20240829-WA0018-576x1024-1-169x300.webp",
+      "status": "ok",
+      "bytes": 6230
+    },
+    {
+      "url": "https://incernews.com/wp-content/uploads/2025/04/IMG-20240829-WA0018-576x1024-1.webp",
+      "path": "wp-content/uploads/2025/04/IMG-20240829-WA0018-576x1024-1.webp",
+      "status": "ok",
+      "bytes": 34606
+    },
+    {
+      "url": "https://incernews.com/wp-content/uploads/2025/04/IMG-20241110-WA0001-e1745937889384.webp",
+      "path": "wp-content/uploads/2025/04/IMG-20241110-WA0001-e1745937889384.webp",
+      "status": "ok",
+      "bytes": 99786
+    },
+    {
+      "url": "https://incernews.com/wp-content/uploads/2025/04/IMG-20250324-WA0005-768x576-1-300x225.webp",
+      "path": "wp-content/uploads/2025/04/IMG-20250324-WA0005-768x576-1-300x225.webp",
+      "status": "ok",
+      "bytes": 20508
+    },
+    {
+      "url": "https://incernews.com/wp-content/uploads/2025/04/IMG-20250324-WA0005-768x576-1.webp",
+      "path": "wp-content/uploads/2025/04/IMG-20250324-WA0005-768x576-1.webp",
+      "status": "ok",
+      "bytes": 87598
+    },
+    {
+      "url": "https://incernews.com/wp-content/uploads/2025/04/IMG-20250324-WA0006.webp",
+      "path": "wp-content/uploads/2025/04/IMG-20250324-WA0006.webp",
+      "status": "ok",
+      "bytes": 160760
+    },
+    {
+      "url": "https://incernews.com/wp-content/uploads/2025/04/IMG-20250324-WA0008-2048x1536-1.webp",
+      "path": "wp-content/uploads/2025/04/IMG-20250324-WA0008-2048x1536-1.webp",
+      "status": "ok",
+      "bytes": 261786
+    },
+    {
+      "url": "https://incernews.com/wp-content/uploads/2025/04/IMG-20250328-WA0003-2048x1554-1.webp",
+      "path": "wp-content/uploads/2025/04/IMG-20250328-WA0003-2048x1554-1.webp",
+      "status": "ok",
+      "bytes": 146294
+    },
+    {
+      "url": "https://incernews.com/wp-content/uploads/2025/04/IMG-20250328-WA0020-2048x1536-1.webp",
+      "path": "wp-content/uploads/2025/04/IMG-20250328-WA0020-2048x1536-1.webp",
+      "status": "ok",
+      "bytes": 395754
+    },
+    {
+      "url": "https://incernews.com/wp-content/uploads/2025/04/IMG-20250328-WA0021-768x576-1-300x225.webp",
+      "path": "wp-content/uploads/2025/04/IMG-20250328-WA0021-768x576-1-300x225.webp",
+      "status": "ok",
+      "bytes": 20930
+    },
+    {
+      "url": "https://incernews.com/wp-content/uploads/2025/04/IMG-20250328-WA0021-768x576-1.webp",
+      "path": "wp-content/uploads/2025/04/IMG-20250328-WA0021-768x576-1.webp",
+      "status": "ok",
+      "bytes": 117976
+    },
+    {
+      "url": "https://incernews.com/wp-content/uploads/2025/04/IMG-20250328-WA0023-1-768x576-1-300x225.webp",
+      "path": "wp-content/uploads/2025/04/IMG-20250328-WA0023-1-768x576-1-300x225.webp",
+      "status": "ok",
+      "bytes": 21616
+    },
+    {
+      "url": "https://incernews.com/wp-content/uploads/2025/04/IMG-20250328-WA0023-1-768x576-1.webp",
+      "path": "wp-content/uploads/2025/04/IMG-20250328-WA0023-1-768x576-1.webp",
+      "status": "ok",
+      "bytes": 115828
+    },
+    {
+      "url": "https://incernews.com/wp-content/uploads/2025/04/IMG-20250331-WA0002-768x1024-1-225x300.webp",
+      "path": "wp-content/uploads/2025/04/IMG-20250331-WA0002-768x1024-1-225x300.webp",
+      "status": "ok",
+      "bytes": 13810
+    },
+    {
+      "url": "https://incernews.com/wp-content/uploads/2025/04/IMG-20250331-WA0002-768x1024-1.webp",
+      "path": "wp-content/uploads/2025/04/IMG-20250331-WA0002-768x1024-1.webp",
+      "status": "ok",
+      "bytes": 98706
+    },
+    {
+      "url": "https://incernews.com/wp-content/uploads/2025/04/IMG-20250331-WA0012-1536x2048-1-e1745937226498.webp",
+      "path": "wp-content/uploads/2025/04/IMG-20250331-WA0012-1536x2048-1-e1745937226498.webp",
+      "status": "ok",
+      "bytes": 326316
+    },
+    {
+      "url": "https://incernews.com/wp-content/uploads/2025/04/IMG-20250331-WA0016-768x1024-1-225x300.webp",
+      "path": "wp-content/uploads/2025/04/IMG-20250331-WA0016-768x1024-1-225x300.webp",
+      "status": "ok",
+      "bytes": 14596
+    },
+    {
+      "url": "https://incernews.com/wp-content/uploads/2025/04/IMG-20250331-WA0016-768x1024-1.webp",
+      "path": "wp-content/uploads/2025/04/IMG-20250331-WA0016-768x1024-1.webp",
+      "status": "ok",
+      "bytes": 93600
+    },
+    {
+      "url": "https://incernews.com/wp-content/uploads/2025/04/IMG-20250331-WA0019-768x1024-1-225x300.webp",
+      "path": "wp-content/uploads/2025/04/IMG-20250331-WA0019-768x1024-1-225x300.webp",
+      "status": "ok",
+      "bytes": 19774
+    },
+    {
+      "url": "https://incernews.com/wp-content/uploads/2025/04/IMG-20250331-WA0019-768x1024-1.webp",
+      "path": "wp-content/uploads/2025/04/IMG-20250331-WA0019-768x1024-1.webp",
+      "status": "ok",
+      "bytes": 161692
+    },
+    {
+      "url": "https://incernews.com/wp-content/uploads/2025/04/IMG-20250331-WA0020-768x1024-1-225x300.webp",
+      "path": "wp-content/uploads/2025/04/IMG-20250331-WA0020-768x1024-1-225x300.webp",
+      "status": "ok",
+      "bytes": 19426
+    },
+    {
+      "url": "https://incernews.com/wp-content/uploads/2025/04/IMG-20250331-WA0020-768x1024-1.webp",
+      "path": "wp-content/uploads/2025/04/IMG-20250331-WA0020-768x1024-1.webp",
+      "status": "ok",
+      "bytes": 145422
+    },
+    {
+      "url": "https://incernews.com/wp-content/uploads/2025/04/IMG-20250416-WA0080-768x431-1-300x168.webp",
+      "path": "wp-content/uploads/2025/04/IMG-20250416-WA0080-768x431-1-300x168.webp",
+      "status": "ok",
+      "bytes": 11436
+    },
+    {
+      "url": "https://incernews.com/wp-content/uploads/2025/04/IMG-20250416-WA0080-768x431-1.webp",
+      "path": "wp-content/uploads/2025/04/IMG-20250416-WA0080-768x431-1.webp",
+      "status": "ok",
+      "bytes": 43446
+    },
+    {
+      "url": "https://incernews.com/wp-content/uploads/2025/04/IMG-20250416-WA0081.webp",
+      "path": "wp-content/uploads/2025/04/IMG-20250416-WA0081.webp",
+      "status": "ok",
+      "bytes": 41620
+    },
+    {
+      "url": "https://incernews.com/wp-content/uploads/2025/04/Screenshot_20240318_103318.webp",
+      "path": "wp-content/uploads/2025/04/Screenshot_20240318_103318.webp",
+      "status": "ok",
+      "bytes": 152806
+    },
+    {
+      "url": "https://incernews.com/wp-content/uploads/2025/04/WhatsApp-Image-2024-04-04-at-10.09.05-AM-1.webp",
+      "path": "wp-content/uploads/2025/04/WhatsApp-Image-2024-04-04-at-10.09.05-AM-1.webp",
+      "status": "ok",
+      "bytes": 252036
+    },
+    {
+      "url": "https://incernews.com/wp-content/uploads/2025/04/WhatsApp-Image-2024-04-04-at-10.09.05-AM-768x576-1-300x225.webp",
+      "path": "wp-content/uploads/2025/04/WhatsApp-Image-2024-04-04-at-10.09.05-AM-768x576-1-300x225.webp",
+      "status": "ok",
+      "bytes": 15630
+    },
+    {
+      "url": "https://incernews.com/wp-content/uploads/2025/04/WhatsApp-Image-2024-04-04-at-10.09.05-AM-768x576-1.webp",
+      "path": "wp-content/uploads/2025/04/WhatsApp-Image-2024-04-04-at-10.09.05-AM-768x576-1.webp",
+      "status": "ok",
+      "bytes": 77446
+    },
+    {
+      "url": "https://incernews.com/wp-content/uploads/2025/04/WhatsApp-Image-2024-04-04-at-10.09.06-AM-768x576-1-300x225.webp",
+      "path": "wp-content/uploads/2025/04/WhatsApp-Image-2024-04-04-at-10.09.06-AM-768x576-1-300x225.webp",
+      "status": "ok",
+      "bytes": 15842
+    },
+    {
+      "url": "https://incernews.com/wp-content/uploads/2025/04/WhatsApp-Image-2024-04-04-at-10.09.06-AM-768x576-1.webp",
+      "path": "wp-content/uploads/2025/04/WhatsApp-Image-2024-04-04-at-10.09.06-AM-768x576-1.webp",
+      "status": "ok",
+      "bytes": 76632
+    },
+    {
+      "url": "https://incernews.com/wp-content/uploads/2025/04/WhatsApp-Image-2024-04-09-at-05.04.11.webp",
+      "path": "wp-content/uploads/2025/04/WhatsApp-Image-2024-04-09-at-05.04.11.webp",
+      "status": "ok",
+      "bytes": 160344
+    },
+    {
+      "url": "https://incernews.com/wp-content/uploads/2025/04/WhatsApp-Image-2024-04-09-at-05.04.12-1-768x1024-1-225x300.webp",
+      "path": "wp-content/uploads/2025/04/WhatsApp-Image-2024-04-09-at-05.04.12-1-768x1024-1-225x300.webp",
+      "status": "ok",
+      "bytes": 11656
+    },
+    {
+      "url": "https://incernews.com/wp-content/uploads/2025/04/WhatsApp-Image-2024-04-09-at-05.04.12-1-768x1024-1.webp",
+      "path": "wp-content/uploads/2025/04/WhatsApp-Image-2024-04-09-at-05.04.12-1-768x1024-1.webp",
+      "status": "ok",
+      "bytes": 77826
+    },
+    {
+      "url": "https://incernews.com/wp-content/uploads/2025/04/WhatsApp-Image-2024-04-09-at-05.04.12-768x1024-1-225x300.webp",
+      "path": "wp-content/uploads/2025/04/WhatsApp-Image-2024-04-09-at-05.04.12-768x1024-1-225x300.webp",
+      "status": "ok",
+      "bytes": 11944
+    },
+    {
+      "url": "https://incernews.com/wp-content/uploads/2025/04/WhatsApp-Image-2024-04-09-at-05.04.12-768x1024-1.webp",
+      "path": "wp-content/uploads/2025/04/WhatsApp-Image-2024-04-09-at-05.04.12-768x1024-1.webp",
+      "status": "ok",
+      "bytes": 90662
+    },
+    {
+      "url": "https://incernews.com/wp-content/uploads/2025/04/WhatsApp-Image-2024-04-09-at-05.04.54-768x1024-1-225x300.webp",
+      "path": "wp-content/uploads/2025/04/WhatsApp-Image-2024-04-09-at-05.04.54-768x1024-1-225x300.webp",
+      "status": "ok",
+      "bytes": 22806
+    },
+    {
+      "url": "https://incernews.com/wp-content/uploads/2025/04/WhatsApp-Image-2024-04-09-at-05.04.54-768x1024-1.webp",
+      "path": "wp-content/uploads/2025/04/WhatsApp-Image-2024-04-09-at-05.04.54-768x1024-1.webp",
+      "status": "ok",
+      "bytes": 173916
+    },
+    {
+      "url": "https://incernews.com/wp-content/uploads/2025/04/WhatsApp-Image-2024-04-09-at-05.04.55-1-768x1024-1-225x300.webp",
+      "path": "wp-content/uploads/2025/04/WhatsApp-Image-2024-04-09-at-05.04.55-1-768x1024-1-225x300.webp",
+      "status": "ok",
+      "bytes": 17684
+    },
+    {
+      "url": "https://incernews.com/wp-content/uploads/2025/04/WhatsApp-Image-2024-04-09-at-05.04.55-1-768x1024-1.webp",
+      "path": "wp-content/uploads/2025/04/WhatsApp-Image-2024-04-09-at-05.04.55-1-768x1024-1.webp",
+      "status": "ok",
+      "bytes": 130708
+    },
+    {
+      "url": "https://incernews.com/wp-content/uploads/2025/04/WhatsApp-Image-2024-04-09-at-05.04.55.webp",
+      "path": "wp-content/uploads/2025/04/WhatsApp-Image-2024-04-09-at-05.04.55.webp",
+      "status": "ok",
+      "bytes": 462432
+    },
+    {
+      "url": "https://incernews.com/wp-content/uploads/2025/04/WhatsApp-Image-2024-04-09-at-08.28.38-1-1536x2048-1-e1745938086237.webp",
+      "path": "wp-content/uploads/2025/04/WhatsApp-Image-2024-04-09-at-08.28.38-1-1536x2048-1-e1745938086237.webp",
+      "status": "ok",
+      "bytes": 254404
+    },
+    {
+      "url": "https://incernews.com/wp-content/uploads/2025/04/WhatsApp-Image-2024-04-09-at-08.28.38-2-768x1024-1-225x300.webp",
+      "path": "wp-content/uploads/2025/04/WhatsApp-Image-2024-04-09-at-08.28.38-2-768x1024-1-225x300.webp",
+      "status": "ok",
+      "bytes": 14642
+    },
+    {
+      "url": "https://incernews.com/wp-content/uploads/2025/04/WhatsApp-Image-2024-04-09-at-08.28.38-2-768x1024-1.webp",
+      "path": "wp-content/uploads/2025/04/WhatsApp-Image-2024-04-09-at-08.28.38-2-768x1024-1.webp",
+      "status": "ok",
+      "bytes": 120116
+    },
+    {
+      "url": "https://incernews.com/wp-content/uploads/2025/04/WhatsApp-Image-2024-04-09-at-08.28.39-768x1024-1-225x300.webp",
+      "path": "wp-content/uploads/2025/04/WhatsApp-Image-2024-04-09-at-08.28.39-768x1024-1-225x300.webp",
+      "status": "ok",
+      "bytes": 9938
+    },
+    {
+      "url": "https://incernews.com/wp-content/uploads/2025/04/WhatsApp-Image-2024-04-09-at-08.28.39-768x1024-1.webp",
+      "path": "wp-content/uploads/2025/04/WhatsApp-Image-2024-04-09-at-08.28.39-768x1024-1.webp",
+      "status": "ok",
+      "bytes": 73892
+    },
+    {
+      "url": "https://incernews.com/wp-content/uploads/2025/04/WhatsApp-Image-2024-07-28-at-09.55.20-e1745937995908.webp",
+      "path": "wp-content/uploads/2025/04/WhatsApp-Image-2024-07-28-at-09.55.20-e1745937995908.webp",
+      "status": "ok",
+      "bytes": 52220
+    },
+    {
+      "url": "https://incernews.com/wp-content/uploads/2025/04/WhatsApp-Image-2024-10-19-at-18.06.41.webp",
+      "path": "wp-content/uploads/2025/04/WhatsApp-Image-2024-10-19-at-18.06.41.webp",
+      "status": "ok",
+      "bytes": 126212
+    },
+    {
+      "url": "https://incernews.com/wp-content/uploads/2025/04/book-2-1.png",
+      "path": "wp-content/uploads/2025/04/book-2-1.png",
+      "status": "ok",
+      "bytes": 80018
+    },
+    {
+      "url": "https://incernews.com/wp-content/uploads/2025/04/cover.jpg",
+      "path": "wp-content/uploads/2025/04/cover.jpg",
+      "status": "ok",
+      "bytes": 222027
+    },
+    {
+      "url": "https://incernews.com/wp-content/uploads/2025/04/cropped-203c3659-c26f-4574-a9d1-b2ee693a8cda.png",
+      "path": "wp-content/uploads/2025/04/cropped-203c3659-c26f-4574-a9d1-b2ee693a8cda.png",
+      "status": "ok",
+      "bytes": 65545
+    },
+    {
+      "url": "https://incernews.com/wp-content/uploads/2025/04/zogue-3.png",
+      "path": "wp-content/uploads/2025/04/zogue-3.png",
+      "status": "ok",
+      "bytes": 3156
+    },
+    {
+      "url": "https://incernews.com/wp-content/uploads/2025/04/zogue.png",
+      "path": "wp-content/uploads/2025/04/zogue.png",
+      "status": "ok",
+      "bytes": 9998
+    },
+    {
+      "url": "https://incernews.com/wp-content/uploads/2025/06/rektor-iain-.webp",
+      "path": "wp-content/uploads/2025/06/rektor-iain-.webp",
+      "status": "ok",
+      "bytes": 52220
+    },
+    {
+      "url": "https://incernews.com/wp-content/uploads/elementor/screenshots/Elementor-post-screenshot_22_2025-04-29-15-13-21_29cca72a.png",
+      "path": "wp-content/uploads/elementor/screenshots/Elementor-post-screenshot_22_2025-04-29-15-13-21_29cca72a.png",
+      "status": "ok",
+      "bytes": 5461
+    },
+    {
+      "url": "https://incernews.com/wp-content/uploads/woocommerce-placeholder.png",
+      "path": "wp-content/uploads/woocommerce-placeholder.png",
+      "status": "ok",
+      "bytes": 55704
+    }
+  ]
+}

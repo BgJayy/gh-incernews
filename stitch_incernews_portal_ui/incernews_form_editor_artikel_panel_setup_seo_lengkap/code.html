@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "secondary-fixed-dim": "#88ceff", "on-tertiary": "#ffffff", "error-container": "#ffdad6", "tertiary": "#b41b24", "on-secondary-fixed": "#001e2e", "on-secondary-container": "#00587e", "on-surface": "#131b2e", "tertiary-fixed-dim": "#ffb3ae", "surface-bright": "#faf8ff", "surface": "#faf8ff", "surface-container-lowest": "#ffffff", "surface-container": "#eaedff", "outline": "#6d7a73", "secondary-fixed": "#c8e6ff", "on-background": "#131b2e", "surface-container-high": "#e2e7ff", "inverse-on-surface": "#eef0ff", "on-error-container": "#93000a", "on-secondary-fixed-variant": "#004c6d", "surface-container-low": "#f2f3ff", "primary-fixed-dim": "#6adbb1", "surface-variant": "#dae2fd", "secondary-container": "#88ceff", "on-primary": "#ffffff", "on-secondary": "#ffffff", "tertiary-container": "#d83739", "inverse-primary": "#6adbb1", "background": "#faf8ff", "on-error": "#ffffff", "surface-container-highest": "#dae2fd", "surface-dim": "#d2d9f4", "on-primary-container": "#f5fff8", "on-surface-variant": "#3d4943", "primary-fixed": "#87f7cd", "primary-container": "#008563", "tertiary-fixed": "#ffdad7", "on-tertiary-fixed-variant": "#930014", "inverse-surface": "#283044", "on-tertiary-container": "#fffbff", "on-primary-fixed": "#002116", "on-primary-fixed-variant": "#00513c", "primary": "#00694e", "on-tertiary-fixed": "#410004", "error": "#ba1a1a", "surface-tint": "#006c50", "outline-variant": "#bccac2", "secondary": "#006590" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-lg": "1.5rem", "space-xs": "0.25rem", "space-xl": "2.5rem", "margin": "2rem", "gutter": "1.5rem", "gutter-mobile": "1rem", "space-sm": "0.5rem", "space-md": "1rem", "margin-tablet": "1.5rem", "gutter-tablet": "1.25rem", "margin-mobile": "1rem" }, "fontFamily": { "lead-paragraph": [ "Montserrat" ], "headline-lg": [ "Montserrat" ], "headline-md": [ "Montserrat" ], "display-hero-mobile": [ "Montserrat" ], "headline-sm": [ "Montserrat" ], "headline-xl": [ "Montserrat" ], "display-hero": [ "Montserrat" ], "caption": [ "Montserrat" ], "label-caps": [ "Montserrat" ], "body-sm": [ "Montserrat" ], "body-lg": [ "Montserrat" ], "body-md": [ "Montserrat" ], "label-md": [ "Montserrat" ], "headline-xl-mobile": [ "Montserrat" ] }, "fontSize": { "lead-paragraph": [ "20px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "500" } ], "headline-lg": [ "30px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "headline-md": [ "22px", { "lineHeight": "30px", "letterSpacing": "-0.015em", "fontWeight": "700" } ], "display-hero-mobile": [ "34px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "800" } ], "headline-sm": [ "18px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "headline-xl": [ "40px", { "lineHeight": "48px", "letterSpacing": "-0.025em", "fontWeight": "800" } ], "display-hero": [ "56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "800" } ], "caption": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "500" } ], "label-caps": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" } ], "body-sm": [ "13px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" } ], "body-lg": [ "17px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "400" } ], "body-md": [ "15px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" } ], "label-md": [ "14px", { "lineHeight": "18px", "letterSpacing": "0em", "fontWeight": "600" } ], "headline-xl-mobile": [ "28px", { "lineHeight": "34px", "letterSpacing": "-0.015em", "fontWeight": "800" } ] } } } };</script></head><body class="bg-surface text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between overflow-y-auto"><div class="flex flex-col"><div class="h-16 px-space-md flex items-center justify-between border-b border-surface-container-high"><div class="flex items-center gap-space-xs"><div class="w-8 h-8 rounded-lg bg-primary-container flex items-center justify-center text-on-primary-container font-headline-sm text-headline-sm font-bold">I</div><span class="font-headline-md text-headline-md font-bold tracking-tight text-on-surface">Incer<span class="text-primary">News</span></span></div><span class="px-space-xs py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-caps text-label-caps">CMS v2.0</span></div><nav class="px-space-sm py-space-md space-y-space-md" data-active-classes="bg-primary-container text-on-primary-container font-bold rounded-lg"><div class="space-y-space-xs"><div class="px-space-xs font-label-caps text-label-caps text-outline uppercase tracking-wider">Utama</div><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="dashboard" href="#"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-label-md text-label-md">Dashboard</span></div></a></div><div class="space-y-space-xs"><div class="px-space-xs font-label-caps text-label-caps text-outline uppercase tracking-wider">Manajemen Konten</div><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="artikel-berita" href="#"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[20px]">newspaper</span><span class="font-label-md text-label-md">Artikel Berita</span></div><span class="px-space-xs py-0.5 rounded-full bg-secondary text-on-secondary font-label-caps text-label-caps">142</span></a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="kategori" href="#"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[20px]">category</span><span class="font-label-md text-label-md">Kategori</span></div></a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="tag-dan-topik" href="#"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[20px]">label</span><span class="font-label-md text-label-md">Tag &amp; Topik</span></div></a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="galeri-media" href="#"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[20px]">photo_library</span><span class="font-label-md text-label-md">Galeri Media</span></div></a></div><div class="space-y-space-xs"><div class="px-space-xs font-label-caps text-label-caps text-outline uppercase tracking-wider">Optimasi &amp; Moneter</div><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="seo-dan-sitemap" href="#"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[20px]">query_stats</span><span class="font-label-md text-label-md">SEO &amp; Sitemap Monitor</span></div></a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="manajemen-banner-iklan" href="#"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[20px]">ad</span><span class="font-label-md text-label-md">Manajemen Banner Iklan</span></div></a></div><div class="space-y-space-xs"><div class="px-space-xs font-label-caps text-label-caps text-outline uppercase tracking-wider">Sistem</div><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="manajemen-user-dan-role" href="#"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[20px]">manage_accounts</span><span class="font-label-md text-label-md">Manajemen User &amp; Role</span></div></a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="pengaturan-web" href="#"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[20px]">settings</span><span class="font-label-md text-label-md">Pengaturan Web</span></div></a></div></nav></div><div class="p-space-sm border-t border-surface-container-high"><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-tertiary hover:bg-error-container hover:text-on-error-container transition-colors" data-path="login" href="#"><span class="material-symbols-outlined text-[20px]">logout</span><span class="font-label-md text-label-md">Keluar Sesi</span></a></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-md border-b border-surface-container-high"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><a class="hover:text-primary transition-colors flex items-center gap-1" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[16px]">home</span><span>Admin</span></a><span>/</span><span class="font-label-md text-label-md text-on-surface">Dashboard</span></div><div class="hidden md:flex items-center gap-space-xs bg-surface-container px-space-sm py-1.5 rounded-lg text-on-surface-variant w-80"><span class="material-symbols-outlined text-[18px]">search</span><span class="font-body-sm text-body-sm flex-1 select-none">Cari menu atau berita...</span><kbd class="px-1.5 py-0.5 rounded bg-surface-container-lowest text-on-surface-variant font-caption text-caption shadow-[0_1px_2px_rgba(0,0,0,0.05)]">Ctrl+K</kbd></div></div><div class="flex items-center gap-space-sm"><a class="hidden lg:flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg border border-secondary text-secondary hover:bg-secondary hover:text-on-secondary transition-colors font-label-md text-label-md" data-path="live-portal" href="#" target="_blank"><span class="material-symbols-outlined text-[16px]">open_in_new</span><span>Lihat Website</span></a><a class="flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg bg-primary-container text-on-primary-container hover:bg-primary hover:text-on-primary transition-colors font-label-md text-label-md shadow-[0_1px_4px_rgba(0,105,78,0.16)]" data-path="tulis-berita" href="#"><span class="material-symbols-outlined text-[18px]">add</span><span>Tulis Berita</span></a><div class="relative"><button class="w-9 h-9 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors relative"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-tertiary-container"></span></button></div><div class="h-6 w-px bg-surface-container-high mx-space-xs"></div><div class="flex items-center gap-space-xs"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="hidden xl:flex flex-col"><span class="font-label-md text-label-md leading-tight text-on-surface">Arif Hidayat</span><span class="font-caption text-caption leading-tight text-on-surface-variant">Super Admin</span></div><span class="material-symbols-outlined text-on-surface-variant text-[18px]">expand_more</span></div></div></header><main class="relative pt-16 bg-surface min-h-screen px-space-md py-space-md"><div class="flex flex-col w-full font-body-md text-on-surface">
+<!-- TOP BREADCRUMB & ACTION HEADER (FILAMENT V3 STYLE) -->
+<div class="flex flex-col md:flex-row md:items-center md:justify-between gap-space-md mb-space-lg pb-space-sm">
+<div class="flex flex-col gap-1">
+<nav class="flex items-center gap-space-xs text-on-surface-variant font-caption text-caption uppercase tracking-wider">
+<a class="hover:text-primary transition-colors flex items-center gap-1" data-path="dashboard" href="#">
+<span class="material-symbols-outlined text-[14px]">home</span> Dashboard
+        </a>
+<span>/</span>
+<a class="hover:text-primary transition-colors" data-path="artikel-berita" href="#">Artikel Berita</a>
+<span>/</span>
+<span class="text-primary font-bold">Tulis Artikel Baru</span>
+</nav>
+<div class="flex items-center gap-space-xs">
+<h1 class="font-headline-lg text-headline-lg tracking-tight font-extrabold text-on-surface">
+          Buat Artikel Baru &amp; Optimasi SEO Suite
+        </h1>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-primary/10 text-primary font-label-caps text-label-caps uppercase">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span> Draft Mode v3
+        </span>
+</div>
+</div>
+<!-- Header Actions -->
+<div class="flex items-center flex-wrap gap-space-xs">
+<button class="px-space-md py-2 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors shadow-sm flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[18px]">save</span>
+<span>Simpan Draf</span>
+</button>
+<button class="px-space-md py-2 rounded-lg bg-secondary/10 text-secondary hover:bg-secondary hover:text-on-secondary transition-all font-label-md text-label-md flex items-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+<span>Pratinjau SERP &amp; Berita</span>
+</button>
+<button class="px-space-md py-2 rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container shadow-sm flex items-center gap-2 transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">send</span>
+<span>Publikasikan Sekarang</span>
+</button>
+</div>
+</div>
+<!-- ASYMMETRIC 12-COL GRID (8 Left : 4 Right) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT COLUMN: CONTENT & SEO SUITE (8 COLUMNS) -->
+<div class="lg:col-span-8 flex flex-col gap-space-lg">
+<!-- CARD 1: KONTEN UTAMA BERITA -->
+<section class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden">
+<!-- Section Header -->
+<div class="px-space-md py-space-sm bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-6 h-6 rounded-md bg-primary text-on-primary font-bold flex items-center justify-center font-caption text-caption">1</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Konten Utama Berita</h2>
+</div>
+<span class="text-on-surface-variant font-caption text-caption flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px] text-primary">verified</span> Auto-save aktif
+          </span>
+</div>
+<div class="p-space-md flex flex-col gap-space-md">
+<!-- Input Judul Berita (H1) -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface font-semibold flex items-center gap-1" for="article-title">
+                Judul Berita (Headline Utama / H1)
+                <span class="text-tertiary">*</span>
+</label>
+<div class="flex items-center gap-1.5">
+<span class="px-2 py-0.5 rounded-full bg-primary/10 text-primary font-caption text-caption font-bold">
+                  58 / 60 karakter ideal
+                </span>
+</div>
+</div>
+<input class="w-full px-space-sm py-2.5 rounded-lg bg-surface-container-lowest text-on-surface font-headline-md text-headline-md placeholder:text-outline font-bold outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary shadow-sm" id="article-title" type="text" value="Transisi Energi Bersih 2030: Strategi Nasional dan Percepatan Infrastruktur Ramah Lingkungan"/>
+<p class="font-caption text-caption text-on-surface-variant">
+              Tulis judul lugas, akurat, dan menempatkan kata kunci utama di depan untuk Click-Through Rate (CTR) mesin pencari.
+            </p>
+</div>
+<!-- Auto-generated SEO Slug URL -->
+<div class="flex flex-col gap-1.5 bg-surface-container-low p-space-sm rounded-lg">
+<label class="font-label-caps text-label-caps text-outline uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">link</span> URL Permanen (Slug)
+            </label>
+<div class="flex items-center flex-wrap gap-2 text-on-surface font-body-sm text-body-sm">
+<span class="text-on-surface-variant font-medium select-none">https://incernews.com/nasional/</span>
+<div class="flex items-center bg-surface-container-lowest px-2.5 py-1 rounded-md shadow-xs">
+<input class="font-body-sm text-body-sm text-primary font-bold outline-none bg-transparent min-w-[280px]" type="text" value="transisi-energi-bersih-2030-strategi-nasional"/>
+<button class="ml-1 text-on-surface-variant hover:text-primary transition-colors" title="Salin Link" type="button">
+<span class="material-symbols-outlined text-[16px]">content_copy</span>
+</button>
+</div>
+<span class="px-2 py-0.5 rounded bg-primary/10 text-primary font-caption text-caption font-semibold">SEO Friendly</span>
+</div>
+</div>
+<!-- Rich Text Editor (Filament TipTap Style) -->
+<div class="flex flex-col rounded-lg shadow-sm overflow-hidden">
+<!-- TipTap Toolbar -->
+<div class="bg-surface-container-low p-2 flex flex-wrap items-center gap-1">
+<button class="w-8 h-8 rounded hover:bg-surface-container-high flex items-center justify-center font-label-md text-label-md font-bold text-on-surface" title="Heading 2" type="button">H2</button>
+<button class="w-8 h-8 rounded hover:bg-surface-container-high flex items-center justify-center font-label-md text-label-md font-bold text-on-surface-variant" title="Heading 3" type="button">H3</button>
+<div class="h-4 w-px bg-surface-container-highest mx-1"></div>
+<button class="w-8 h-8 rounded hover:bg-surface-container-high flex items-center justify-center text-on-surface" title="Bold" type="button">
+<span class="material-symbols-outlined text-[18px]">format_bold</span>
+</button>
+<button class="w-8 h-8 rounded hover:bg-surface-container-high flex items-center justify-center text-on-surface" title="Italic" type="button">
+<span class="material-symbols-outlined text-[18px]">format_italic</span>
+</button>
+<button class="w-8 h-8 rounded hover:bg-surface-container-high flex items-center justify-center text-on-surface-variant" title="Strikethrough" type="button">
+<span class="material-symbols-outlined text-[18px]">strikethrough_s</span>
+</button>
+<div class="h-4 w-px bg-surface-container-highest mx-1"></div>
+<button class="w-8 h-8 rounded hover:bg-surface-container-high flex items-center justify-center text-on-surface" title="Bullet List" type="button">
+<span class="material-symbols-outlined text-[18px]">format_list_bulleted</span>
+</button>
+<button class="w-8 h-8 rounded hover:bg-surface-container-high flex items-center justify-center text-on-surface" title="Numbered List" type="button">
+<span class="material-symbols-outlined text-[18px]">format_list_numbered</span>
+</button>
+<button class="w-8 h-8 rounded hover:bg-surface-container-high flex items-center justify-center text-on-surface" title="Kutipan (Pull Quote)" type="button">
+<span class="material-symbols-outlined text-[18px]">format_quote</span>
+</button>
+<div class="h-4 w-px bg-surface-container-highest mx-1"></div>
+<button class="w-8 h-8 rounded hover:bg-surface-container-high flex items-center justify-center text-on-surface" title="Sisipkan Tautan" type="button">
+<span class="material-symbols-outlined text-[18px]">link</span>
+</button>
+<button class="px-2 h-8 rounded bg-primary/10 text-primary hover:bg-primary hover:text-on-primary transition-colors flex items-center gap-1 font-caption text-caption font-semibold" title="Sisipkan Gambar Ber-Alt Text" type="button">
+<span class="material-symbols-outlined text-[16px]">add_photo_alternate</span>
+<span>Media + Alt</span>
+</button>
+<button class="w-8 h-8 rounded hover:bg-surface-container-high flex items-center justify-center text-on-surface-variant" title="Embed Video" type="button">
+<span class="material-symbols-outlined text-[18px]">smart_display</span>
+</button>
+<div class="h-4 w-px bg-surface-container-highest mx-1"></div>
+<button class="w-8 h-8 rounded hover:bg-surface-container-high flex items-center justify-center text-on-surface-variant ml-auto" title="Source Code" type="button">
+<span class="material-symbols-outlined text-[18px]">code</span>
+</button>
+</div>
+<!-- Editor Editable Body Content -->
+<div class="p-space-md bg-surface-container-lowest min-h-[380px] focus:outline-none flex flex-col gap-space-md">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">
+                Peta Jalan Dekarbonisasi dan Peran Strategis Pembangkit Surya Nasional
+              </h2>
+<p class="font-lead-paragraph text-lead-paragraph text-on-surface font-medium leading-relaxed">
+<span class="bg-primary/10 text-primary font-bold px-1 rounded">JAKARTA</span> — Pemerintah secara terpadu mengumumkan percepatan kerangka <strong>pembangunan energi bersih 2030</strong> guna mengejar komitmen bauran energi terbarukan sebesar 23%. Langkah ini mencakup penguatan transmisi cerdas (smart grid) dan insentif pembiayaan hijau untuk megaproyek terbarukan di berbagai pulau kepulauan.
+              </p>
+<!-- Editorial Pull Quote Block -->
+<blockquote class="bg-surface-container-low p-space-md rounded-r-lg shadow-sm">
+<p class="font-headline-sm text-headline-sm italic text-primary leading-snug">
+                  "Pondasi dekarbonisasi bukan semata-mata target emisi, melainkan kedaulatan industri dan kemandirian pasokan listrik masa depan Indonesia."
+                </p>
+<div class="mt-2 font-caption text-caption text-on-surface-variant font-semibold">
+                  — Hendra Wijaya, Direktur Kebijakan Iklim &amp; Transisi Energi
+                </div>
+</blockquote>
+<p class="font-body-lg text-body-lg text-on-surface leading-relaxed">
+                Salah satu tonggak terpenting adalah optimalisasi Pembangkit Listrik Tenaga Surya (PLTS) Terapung Cirata yang berhasil membuktikan kelayakan teknis penggabungan waduk serbaguna dan panel fotovoltaik skala gigawatt.
+              </p>
+<!-- Embedded Editorial Media Block with Mandatory Alt Tag Preview -->
+<figure class="rounded-xl overflow-hidden bg-surface-container-low shadow-sm">
+<div class="relative w-full h-56 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Editorial photograph of the Cirata floating solar panel arrays on calm water during golden hour sunrise in West Java Indonesia, modern high tech clean energy infrastructure with distant lush green hills in cinematic editorial style with deep teal and natural sunlight tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAI4ReKQiuEk7O3bzjH_c1bM8Gvz4FNOVsoWtXW8ZOkFCmxjt7d6oe8DuLwiE7KUZwnGFrCMOgPD587Iya6ppej-LMoa0ZQxpjXh4076KnQIKVGDwGvO_51t9CjfiYlIeimFB7hBkZOCC_YOEH3mTng6GPHIH3JZCm8X8wuFWJULRQjiHN3vx8XNeI3XEbapGbHenRUKkIvc5K-q2WVhaU2z2_gZw8cvyk58MagLw"/>
+<span class="absolute top-3 left-3 bg-primary text-on-primary font-label-caps text-label-caps px-2.5 py-1 rounded shadow-xs uppercase">
+                    Alt-Text Verified
+                  </span>
+</div>
+<figcaption class="p-space-sm flex items-center justify-between text-on-surface-variant font-caption text-caption bg-surface-container">
+<span><strong>Foto:</strong> Hamparan panel PLTS terapung di atas permukaan waduk dengan sistem peredam gelombang hidro-dinamis.</span>
+<span class="text-primary font-medium">Dok. IncerNews / Antara</span>
+</figcaption>
+</figure>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                Tantangan terbesar kini bertumpu pada perkuatan interkoneksi kabel bawah laut antar-pulau guna menjamin kestabilan beban dasar saat puncak konsumsi kawasan urban metropolitan.
+              </p>
+</div>
+<!-- Editor Footbar Metadata -->
+<div class="bg-surface-container-low px-space-md py-2 flex items-center justify-between text-on-surface-variant font-caption text-caption">
+<div class="flex items-center gap-space-md">
+<span>Total Kata: <strong>482 kata</strong></span>
+<span>Estimasi Baca: <strong>2 menit 24 detik</strong></span>
+</div>
+<span class="text-primary font-semibold flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-primary"></span> Editor Stabil
+              </span>
+</div>
+</div>
+<!-- Excerpt / Ringkasan Singkat Berita -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface font-semibold flex items-center gap-1" for="article-excerpt">
+                Ringkasan Singkat Berita (Excerpt / Lead Summary)
+              </label>
+<span class="font-caption text-caption text-primary font-bold">150 / 200 Karakter</span>
+</div>
+<textarea class="w-full px-space-sm py-2 rounded-lg bg-surface-container-lowest text-on-surface font-body-sm text-body-sm placeholder:text-outline outline-none focus:ring-2 focus:ring-primary shadow-sm leading-relaxed" id="article-excerpt" rows="3">Pemerintah resmi umumkan peta jalan integrasi energi baru terbarukan (EBT) menuju target 23% bauran nasional 2030 lewat penguatan smart grid dan PLTS.</textarea>
+<p class="font-caption text-caption text-on-surface-variant">
+              Ringkasan ini tampil otomatis pada kartu beranda portal, RSS feed, cuplikan media sosial, dan agregator Google News.
+            </p>
+</div>
+</div>
+</section>
+<!-- CARD 2: SETUP SEO & GOOGLE CRAWLER SUITE -->
+<section class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden">
+<!-- Section Header -->
+<div class="px-space-md py-space-sm bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-6 h-6 rounded-md bg-secondary text-on-secondary font-bold flex items-center justify-center font-caption text-caption">2</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Setup SEO &amp; Google Crawler Suite</h2>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-secondary/10 text-secondary font-label-caps text-label-caps uppercase font-bold">
+            Audit Level A+
+          </span>
+</div>
+<!-- Filament-style Interactive Tabs -->
+<div class="flex bg-surface-container-low px-space-md pt-2">
+<button class="tab-btn px-space-md py-2.5 font-label-md text-label-md font-bold text-primary shadow-sm rounded-t-lg bg-surface-container-lowest flex items-center gap-2 transition-all" onclick="switchSeoTab('tab-onpage', this)" type="button">
+<span class="material-symbols-outlined text-[18px]">travel_explore</span>
+<span>On-Page SEO &amp; Meta</span>
+</button>
+<button class="tab-btn px-space-md py-2.5 font-label-md text-label-md font-semibold text-on-surface-variant hover:text-on-surface rounded-t-lg transition-all flex items-center gap-2" onclick="switchSeoTab('tab-schema', this)" type="button">
+<span class="material-symbols-outlined text-[18px]">schema</span>
+<span>Schema Markup &amp; Crawler</span>
+</button>
+<button class="tab-btn px-space-md py-2.5 font-label-md text-label-md font-semibold text-on-surface-variant hover:text-on-surface rounded-t-lg transition-all flex items-center gap-2" onclick="switchSeoTab('tab-og', this)" type="button">
+<span class="material-symbols-outlined text-[18px]">share</span>
+<span>Social Media Open Graph (OG)</span>
+</button>
+</div>
+<!-- TAB CONTENT CONTAINER -->
+<div class="p-space-md">
+<!-- TAB A: ON-PAGE SEO & META (ACTIVE) -->
+<div class="seo-tab-panel flex flex-col gap-space-md" id="tab-onpage">
+<!-- Focus Keyword Input -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface font-semibold flex items-center gap-1">
+                  Focus Keyword (Kata Kunci Utama)
+                  <span class="text-tertiary">*</span>
+</label>
+<span class="px-2 py-0.5 rounded bg-primary/10 text-primary font-caption text-caption font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">query_stats</span> Vol: 48.5K / bln (Kompetisi: Sedang)
+                </span>
+</div>
+<div class="flex items-center gap-2">
+<div class="relative flex-1">
+<input class="w-full px-space-sm py-2 pl-9 rounded-lg bg-surface-container-lowest text-on-surface font-body-md text-body-md font-semibold outline-none focus:ring-2 focus:ring-primary shadow-sm" type="text" value="Pembangunan Energi Bersih 2030"/>
+<span class="material-symbols-outlined absolute left-2.5 top-2.5 text-[18px] text-primary">key</span>
+</div>
+<button class="px-space-sm py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[16px]">sync</span> Analisis
+                </button>
+</div>
+</div>
+<!-- Secondary Keywords -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold">
+                Secondary Keywords (Kata Kunci Pendukung / LSI)
+              </label>
+<div class="flex flex-wrap items-center gap-2 p-2 rounded-lg bg-surface-container-low min-h-[46px]">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-md bg-surface-container-lowest text-on-surface font-caption text-caption font-semibold shadow-xs">
+                  PLTS Cirata
+                  <button class="hover:text-tertiary" type="button"><span class="material-symbols-outlined text-[14px]">close</span></button>
+</span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-md bg-surface-container-lowest text-on-surface font-caption text-caption font-semibold shadow-xs">
+                  Transisi Energi
+                  <button class="hover:text-tertiary" type="button"><span class="material-symbols-outlined text-[14px]">close</span></button>
+</span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-md bg-surface-container-lowest text-on-surface font-caption text-caption font-semibold shadow-xs">
+                  Dekarbonisasi
+                  <button class="hover:text-tertiary" type="button"><span class="material-symbols-outlined text-[14px]">close</span></button>
+</span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-md bg-surface-container-lowest text-on-surface font-caption text-caption font-semibold shadow-xs">
+                  Smart Grid
+                  <button class="hover:text-tertiary" type="button"><span class="material-symbols-outlined text-[14px]">close</span></button>
+</span>
+<input class="bg-transparent outline-none font-caption text-caption text-on-surface px-2 py-1 placeholder:text-outline" placeholder="+ Tambah kata kunci..." type="text"/>
+</div>
+</div>
+<!-- Meta Title Field with Real-time Progress Bar -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="meta-title-input">
+                  Meta Title (Google Serp Title)
+                </label>
+<span class="font-caption text-caption text-primary font-bold">56 / 60 Karakter (Optimal)</span>
+</div>
+<input class="w-full px-space-sm py-2 rounded-lg bg-surface-container-lowest text-on-surface font-body-sm text-body-sm outline-none focus:ring-2 focus:ring-primary shadow-sm" id="meta-title-input" type="text" value="Transisi Energi Bersih 2030: Strategi Nasional &amp; Percepatan - IncerNews"/>
+<div class="w-full h-1.5 bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 93%;"></div>
+</div>
+</div>
+<!-- Meta Description with Real-time Progress Bar -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="meta-desc-input">
+                  Meta Description
+                </label>
+<span class="font-caption text-caption text-primary font-bold">154 / 160 Karakter (Optimal)</span>
+</div>
+<textarea class="w-full px-space-sm py-2 rounded-lg bg-surface-container-lowest text-on-surface font-body-sm text-body-sm outline-none focus:ring-2 focus:ring-primary shadow-sm leading-relaxed" id="meta-desc-input" rows="2">Pemerintah resmi umumkan peta jalan integrasi energi baru terbarukan (EBT) menuju target 23% bauran energi nasional tahun 2030 melalui transmisi cerdas.</textarea>
+<div class="w-full h-1.5 bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 96%;"></div>
+</div>
+</div>
+<!-- Live SERP Preview Box (Google Search Simulation) -->
+<div class="flex flex-col gap-2 p-space-md rounded-xl bg-surface-container-low shadow-sm">
+<div class="flex items-center justify-between pb-2">
+<span class="font-label-md text-label-md font-bold text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-secondary">travel_explore</span>
+                  Pratinjau Snippet Google SERP
+                </span>
+<!-- Switch Desktop / Mobile -->
+<div class="flex items-center bg-surface-container-lowest p-0.5 rounded-lg shadow-xs">
+<button class="px-2.5 py-1 rounded bg-secondary text-on-secondary font-caption text-caption font-bold flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[14px]">desktop_windows</span> Desktop
+                  </button>
+<button class="px-2.5 py-1 rounded text-on-surface-variant hover:text-on-surface font-caption text-caption font-medium flex items-center gap-1" type="button">
+<span class="material-symbols-outlined text-[14px]">smartphone</span> Mobile
+                  </button>
+</div>
+</div>
+<!-- Google SERP Card Body -->
+<div class="p-space-md bg-surface-container-lowest rounded-lg shadow-sm flex flex-col gap-1.5 max-w-2xl">
+<!-- Favicon + Breadcrumb -->
+<div class="flex items-center gap-2 text-[12px] text-on-surface-variant leading-tight">
+<div class="w-5 h-5 rounded-full bg-primary flex items-center justify-center text-on-primary font-bold text-[10px]">
+                    I
+                  </div>
+<div class="flex items-center gap-1 truncate">
+<span class="font-semibold text-on-surface">IncerNews</span>
+<span>›</span>
+<span>nasional</span>
+<span>›</span>
+<span class="truncate">transisi-energi-bersih-2030</span>
+</div>
+</div>
+<!-- SERP Blue Link Title -->
+<a class="font-headline-sm text-headline-sm text-[#1a0dab] hover:underline font-medium leading-snug cursor-pointer" href="#">
+                  Transisi Energi Bersih 2030: Strategi Nasional &amp; Percepatan - IncerNews
+                </a>
+<!-- SERP Snippet with bold matching terms -->
+<p class="font-body-sm text-body-sm text-[#4d5156] leading-relaxed">
+<span class="text-[#70757a]">24 Okt 2024 — </span>
+                  Pemerintah resmi umumkan peta jalan integrasi <strong>energi baru terbarukan</strong> (EBT) menuju target 23% bauran <strong>energi bersih 2030</strong> nasional melalui transmisi cerdas dan penguatan infrastruktur PLTS terapung.
+                </p>
+</div>
+</div>
+</div>
+<!-- TAB B: SCHEMA MARKUP & CRAWLER (HIDDEN DEFAULT) -->
+<div class="seo-tab-panel hidden flex flex-col gap-space-md" id="tab-schema">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Tipe Schema JSON-LD</label>
+<select class="w-full px-space-sm py-2 rounded-lg bg-surface-container-lowest text-on-surface font-body-sm text-body-sm outline-none focus:ring-2 focus:ring-primary shadow-sm">
+<option selected="">NewsArticle (Direkomendasikan untuk Google News)</option>
+<option>OpinionNewsArticle</option>
+<option>ReportageNewsArticle</option>
+<option>AnalysisNewsArticle</option>
+</select>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Canonical URL</label>
+<input class="w-full px-space-sm py-2 rounded-lg bg-surface-container-lowest text-on-surface font-body-sm text-body-sm outline-none focus:ring-2 focus:ring-primary shadow-sm" placeholder="https://incernews.com/nasional/transisi-energi-bersih-2030-strategi-nasional" type="text"/>
+<span class="font-caption text-caption text-on-surface-variant">Kosongkan jika URL ini adalah sumber asli berita.</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md pt-2">
+<div class="p-space-sm bg-surface-container-low rounded-lg flex items-center justify-between">
+<div>
+<div class="font-label-md text-label-md font-semibold text-on-surface">Robots Meta: Index</div>
+<div class="font-caption text-caption text-on-surface-variant">Izinkan mesin pencari merayapi artikel ini</div>
+</div>
+<div class="w-11 h-6 bg-primary rounded-full relative cursor-pointer">
+<div class="w-5 h-5 bg-on-primary rounded-full absolute right-0.5 top-0.5 shadow-sm"></div>
+</div>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg flex items-center justify-between">
+<div>
+<div class="font-label-md text-label-md font-semibold text-on-surface">Robots Meta: Follow</div>
+<div class="font-caption text-caption text-on-surface-variant">Izinkan bot mengikuti seluruh link artikel</div>
+</div>
+<div class="w-11 h-6 bg-primary rounded-full relative cursor-pointer">
+<div class="w-5 h-5 bg-on-primary rounded-full absolute right-0.5 top-0.5 shadow-sm"></div>
+</div>
+</div>
+</div>
+<!-- Auto-Ping Google Search Console -->
+<div class="p-space-md bg-primary/5 rounded-xl flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-[24px] text-primary mt-0.5">bolt</span>
+<div class="flex-1">
+<div class="flex items-center justify-between">
+<span class="font-label-md text-label-md font-bold text-on-surface">Auto-Ping Google Search Console &amp; Sitemap XML</span>
+<div class="w-11 h-6 bg-primary rounded-full relative cursor-pointer">
+<div class="w-5 h-5 bg-on-primary rounded-full absolute right-0.5 top-0.5 shadow-sm"></div>
+</div>
+</div>
+<p class="font-caption text-caption text-on-surface-variant mt-1">
+                  Sistem Filament akan otomatis memicu webhook Google Indexing API dan memperbarui <code>sitemap-news.xml</code> dalam 30 detik setelah artikel terbit.
+                </p>
+</div>
+</div>
+</div>
+<!-- TAB C: OPEN GRAPH (HIDDEN DEFAULT) -->
+<div class="seo-tab-panel hidden flex flex-col gap-space-md" id="tab-og">
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Custom Open Graph (OG) Image (1200 x 630 px)</label>
+<div class="relative w-full h-44 rounded-lg overflow-hidden bg-surface-container-low flex flex-col items-center justify-center text-on-surface-variant">
+<img class="absolute inset-0 w-full h-full object-cover opacity-90" data-alt="Social media link preview card visual featuring massive clean solar power installation floating on blue lake water with high contrast editorial graphics and IncerNews branded watermark in corner" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5LoVJC4zlGpAN88MVGjvQPpyUxi5cNx__ncE06A43_yiP_S_HOB4sI1oLDfTN9ItYr5MyimdNjtl75jZMnJbYN2gU-A97AguKZJacqN8OVn3Cu3j3EuMFxhfuIgRl0KlYjRPOmet6KwEYTryhkWujXlS2naJj7aLiXpq_yrKpBeoNjiY2Bv_TCPQyWkNUorHOfOqXSs10MNh8hIEG6_l6p7mEkOcboBcm0XhRiw"/>
+<div class="absolute inset-0 bg-on-surface/40 flex items-center justify-center gap-2">
+<button class="px-space-sm py-1.5 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-sm" type="button">
+                    Ganti Gambar OG
+                  </button>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold">OG Title</label>
+<input class="w-full px-space-sm py-2 rounded-lg bg-surface-container-lowest text-on-surface font-body-sm text-body-sm outline-none focus:ring-2 focus:ring-primary shadow-sm" type="text" value="Transisi Energi Bersih 2030: Strategi Nasional dan Infrastruktur Ramah Lingkungan"/>
+</div>
+<!-- Social Card Live Preview -->
+<div class="p-space-sm rounded-lg bg-surface-container-low flex flex-col gap-2">
+<span class="font-label-caps text-label-caps text-outline uppercase">Pratinjau Kartu WhatsApp &amp; X / Twitter</span>
+<div class="bg-surface-container-lowest rounded-lg overflow-hidden shadow-sm max-w-md">
+<div class="w-full h-36 bg-surface-container-high overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Preview of floating solar panel station with dramatic teal ambient light ready for high quality social media link sharing" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfpEiK0AW6iAcxZf8ggH7t-LhKQnLbbcxaCfY5IABjBFEcCCvsxNf0_65PjpT4CLKyDGKOnSQbkPDK6ZShkMTd9-wi_-wA70IWXrinNy-CW_7ok8jGotuK3iVMm7pqlwRBd4_xXla0JTpjUGIIqaDc93BwbDfEVAu_QXzZ9rJkJUz94AqMVXZIXUjqUM5tUM48cBc1kS_rHltJJtGp8pVvKi_da5Jd4Ts1D-g05w"/>
+</div>
+<div class="p-space-sm flex flex-col gap-1">
+<span class="font-caption text-caption text-on-surface-variant uppercase tracking-wider">INCERNEWS.COM</span>
+<div class="font-headline-sm text-headline-sm font-bold text-on-surface leading-snug">
+                    Transisi Energi Bersih 2030: Strategi Nasional
+                  </div>
+<p class="font-caption text-caption text-on-surface-variant line-clamp-2">
+                    Pemerintah resmi umumkan peta jalan integrasi energi baru terbarukan (EBT) menuju target 23% bauran energi nasional.
+                  </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- RIGHT COLUMN: SEO GAUGE, PUBLICATION, & FEATURED IMAGE (4 COLUMNS) -->
+<div class="lg:col-span-4 flex flex-col gap-space-lg">
+<!-- RIGHT CARD 1: SKOR SEO REAL-TIME -->
+<section class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden">
+<div class="px-space-md py-space-sm bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-6 h-6 rounded-md bg-primary text-on-primary font-bold flex items-center justify-center font-caption text-caption">1</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Skor SEO Real-Time</h2>
+</div>
+<span class="text-primary font-bold font-caption text-caption">Min. 80%</span>
+</div>
+<div class="p-space-md flex flex-col items-center gap-space-md">
+<!-- Circular Progress Gauge Widget -->
+<div class="relative w-36 h-36 flex items-center justify-center">
+<svg class="w-full h-full transform -rotate-90" viewbox="0 0 100 100">
+<!-- Background Ring -->
+<circle class="text-surface-container" cx="50" cy="50" fill="transparent" r="40" stroke="currentColor" stroke-width="9"></circle>
+<!-- Progress Arc (86%) -->
+<circle class="text-primary" cx="50" cy="50" fill="transparent" r="40" stroke="currentColor" stroke-dasharray="251.2" stroke-dashoffset="35.16" stroke-linecap="round" stroke-width="9"></circle>
+</svg>
+<div class="absolute flex flex-col items-center justify-center">
+<span class="font-display-hero-mobile text-display-hero-mobile font-extrabold text-on-surface leading-none">86</span>
+<span class="font-caption text-caption text-on-surface-variant font-bold">/ 100</span>
+</div>
+</div>
+<!-- SEO Status Pill -->
+<div class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary/10 text-primary font-label-md text-label-md font-bold">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+<span>SEO Optimal - Siap Terbit</span>
+</div>
+<!-- Interactive SEO Checklist -->
+<div class="w-full flex flex-col gap-2 pt-2">
+<span class="font-label-caps text-label-caps text-outline uppercase tracking-wider">Audit Kelayakan Konten</span>
+<div class="flex items-start gap-2 p-2 rounded-lg bg-surface-container-low text-body-sm font-body-sm">
+<span class="material-symbols-outlined text-[18px] text-primary mt-0.5">check_circle</span>
+<span class="text-on-surface">Focus Keyword ditemukan pada <strong>Judul H1</strong></span>
+</div>
+<div class="flex items-start gap-2 p-2 rounded-lg bg-surface-container-low text-body-sm font-body-sm">
+<span class="material-symbols-outlined text-[18px] text-primary mt-0.5">check_circle</span>
+<span class="text-on-surface">Focus Keyword ada di paragraf pertama</span>
+</div>
+<div class="flex items-start gap-2 p-2 rounded-lg bg-surface-container-low text-body-sm font-body-sm">
+<span class="material-symbols-outlined text-[18px] text-primary mt-0.5">check_circle</span>
+<span class="text-on-surface">Panjang Meta Description optimal (154 karakter)</span>
+</div>
+<div class="flex items-start gap-2 p-2 rounded-lg bg-surface-container-low text-body-sm font-body-sm">
+<span class="material-symbols-outlined text-[18px] text-primary mt-0.5">check_circle</span>
+<span class="text-on-surface">Gambar utama memiliki atribut <strong>Alt Text</strong></span>
+</div>
+<div class="flex items-start gap-2 p-2 rounded-lg bg-surface-container-low text-body-sm font-body-sm">
+<span class="material-symbols-outlined text-[18px] text-primary mt-0.5">check_circle</span>
+<span class="text-on-surface">URL Slug singkat dan memuat kata kunci</span>
+</div>
+<!-- Warning Checklist Item -->
+<div class="flex items-start gap-2 p-2 rounded-lg bg-tertiary-container/10 text-body-sm font-body-sm">
+<span class="material-symbols-outlined text-[18px] text-tertiary-container mt-0.5">warning</span>
+<span class="text-on-surface">
+<strong>Peringatan:</strong> Tambahkan minimal 1 Internal Link ke berita terkait lain.
+              </span>
+</div>
+</div>
+</div>
+</section>
+<!-- RIGHT CARD 2: PUBLIKASI & KLASIFIKASI -->
+<section class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden">
+<div class="px-space-md py-space-sm bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-6 h-6 rounded-md bg-secondary text-on-secondary font-bold flex items-center justify-center font-caption text-caption">2</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Publikasi &amp; Klasifikasi</h2>
+</div>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">tune</span>
+</div>
+<div class="p-space-md flex flex-col gap-space-md">
+<!-- Status Artikel -->
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Status Artikel</label>
+<select class="w-full px-space-sm py-2 rounded-lg bg-surface-container-lowest text-on-surface font-body-sm text-body-sm outline-none focus:ring-2 focus:ring-primary shadow-sm font-medium">
+<option selected="">Published (Terbit Publik)</option>
+<option>Pending Review (Menunggu Kurasi Redaktur)</option>
+<option>Scheduled (Terjadwal)</option>
+<option>Draft (Konsep Draf)</option>
+</select>
+</div>
+<!-- Kategori Wajib -->
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface font-semibold flex items-center gap-1">
+              Kategori Wajib <span class="text-tertiary">*</span>
+</label>
+<select class="w-full px-space-sm py-2 rounded-lg bg-surface-container-lowest text-on-surface font-body-sm text-body-sm outline-none focus:ring-2 focus:ring-primary shadow-sm font-medium">
+<option>Opini &amp; Kolom</option>
+<option selected="">Nasional</option>
+<option>Daerah &amp; Megapolitan</option>
+<option>Liputan Khusus &amp; Investigasi</option>
+<option>For Her</option>
+</select>
+</div>
+<!-- Tags Berita -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Tags Berita</label>
+<div class="flex flex-wrap gap-1.5 p-2 rounded-lg bg-surface-container-low">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container-lowest text-on-surface font-caption text-caption shadow-xs">
+                #EnergiTerbarukan
+                <button class="hover:text-tertiary" type="button"><span class="material-symbols-outlined text-[13px]">close</span></button>
+</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container-lowest text-on-surface font-caption text-caption shadow-xs">
+                #PLTS
+                <button class="hover:text-tertiary" type="button"><span class="material-symbols-outlined text-[13px]">close</span></button>
+</span>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container-lowest text-on-surface font-caption text-caption shadow-xs">
+                #KebijakanNasional
+                <button class="hover:text-tertiary" type="button"><span class="material-symbols-outlined text-[13px]">close</span></button>
+</span>
+<input class="bg-transparent outline-none font-caption text-caption px-1 py-0.5 w-24 text-on-surface" placeholder="+ Tambah tag" type="text"/>
+</div>
+</div>
+<!-- Penulis / Jurnalis -->
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Penulis / Jurnalis</label>
+<div class="relative">
+<select class="w-full px-space-sm py-2 pl-9 rounded-lg bg-surface-container-lowest text-on-surface font-body-sm text-body-sm outline-none focus:ring-2 focus:ring-primary shadow-sm font-medium">
+<option selected="">Hendra Wijaya - Redaksi Kebijakan</option>
+<option>Siti Rahmawati - Desk Investigasi</option>
+<option>Budi Santoso - Editor Pelaksana</option>
+</select>
+<span class="material-symbols-outlined absolute left-2.5 top-2.5 text-[18px] text-on-surface-variant">person</span>
+</div>
+</div>
+<!-- Jadwal Tayang -->
+<div class="flex flex-col gap-1">
+<label class="font-label-md text-label-md text-on-surface font-semibold">Jadwal Tayang</label>
+<div class="relative">
+<input class="w-full px-space-sm py-2 pl-9 rounded-lg bg-surface-container-lowest text-on-surface font-body-sm text-body-sm outline-none focus:ring-2 focus:ring-primary shadow-sm font-medium" type="text" value="24 Okt 2024, 09:15 WIB"/>
+<span class="material-symbols-outlined absolute left-2.5 top-2.5 text-[18px] text-on-surface-variant">schedule</span>
+</div>
+</div>
+<!-- Editorial Toggles -->
+<div class="flex flex-col gap-2 pt-2">
+<!-- Toggle 1: Headline Hero -->
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Jadikan Headline Utama (Hero)</span>
+<span class="font-caption text-caption text-on-surface-variant">Posisikan di slot 8-kolom teratas portal</span>
+</div>
+<div class="w-11 h-6 bg-primary rounded-full relative cursor-pointer">
+<div class="w-5 h-5 bg-on-primary rounded-full absolute right-0.5 top-0.5 shadow-sm"></div>
+</div>
+</div>
+<!-- Toggle 2: Breaking News Ticker -->
+<div class="flex items-center justify-between p-2 rounded-lg bg-surface-container-low">
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Masukkan ke Breaking Ticker</span>
+<span class="font-caption text-caption text-on-surface-variant">Tayangkan di pita merah berjalan</span>
+</div>
+<div class="w-11 h-6 bg-primary rounded-full relative cursor-pointer">
+<div class="w-5 h-5 bg-on-primary rounded-full absolute right-0.5 top-0.5 shadow-sm"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- RIGHT CARD 3: GAMBAR UTAMA (FEATURED IMAGE) -->
+<section class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden">
+<div class="px-space-md py-space-sm bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-6 h-6 rounded-md bg-secondary text-on-secondary font-bold flex items-center justify-center font-caption text-caption">3</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Gambar Utama (Featured)</h2>
+</div>
+<span class="text-tertiary font-bold">* Wajib</span>
+</div>
+<div class="p-space-md flex flex-col gap-space-md">
+<!-- Drag & Drop Image Preview Card -->
+<div class="relative rounded-xl overflow-hidden bg-surface-container-low flex flex-col shadow-sm group">
+<div class="relative w-full h-48 overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Stunning aerial wide angle shot of Cirata floating solar panel farm floating on calm reflective reservoir water in West Java surrounded by lush mountain landscape in crisp editorial daylight with deep teal reflections" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_LsfjJiPqMTa0BvJwl9bqRVP6rXiGtGsySmhn4rjlYN0o--6DdvhcTfBJT1VpJGMKZ8QxNgsDc7E7DPvOe6DI1WnimzlJmfcZPR_3cAhZ3YiT4r0lXtJc_y9GoBpdlnUddlhcIkDJhBQoH14VodR6I9r7EnVXpybfcCxRDkAHytISHx3qACrgC25zFJexcTwxkU-iDH_KDqaKr7-IiNj__3RtPMDHS1hJlMWYCg"/>
+<div class="absolute inset-0 bg-on-surface/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-2">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-sm" type="button">
+                  Ganti File
+                </button>
+</div>
+<!-- WebP Badge -->
+<span class="absolute top-2.5 right-2.5 bg-on-surface/80 text-surface-bright font-caption text-caption px-2 py-0.5 rounded shadow-xs">
+                WebP • 142 KB
+              </span>
+</div>
+<div class="p-2.5 flex items-center justify-between text-on-surface-variant font-caption text-caption bg-surface-container-low">
+<span class="truncate">plts-terapung-cirata-2024.webp</span>
+<span class="text-primary font-bold">Core Web Vitals Pass</span>
+</div>
+</div>
+<!-- Mandatory Alt Text Field -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface font-semibold flex items-center gap-1" for="img-alt-text">
+                Alt Text Gambar (Wajib SEO)
+                <span class="text-tertiary">*</span>
+</label>
+<span class="px-1.5 py-0.5 rounded bg-primary/10 text-primary font-caption text-caption font-bold">Terisi Baik</span>
+</div>
+<input class="w-full px-space-sm py-2 rounded-lg bg-surface-container-lowest text-on-surface font-body-sm text-body-sm outline-none focus:ring-2 focus:ring-primary shadow-sm font-medium" id="img-alt-text" type="text" value="Pembangkit Listrik Tenaga Surya Terapung Cirata"/>
+<p class="font-caption text-caption text-on-surface-variant">
+              Teks ini digunakan mesin pencari Google Image dan pembaca tunanetra (Screen Reader).
+            </p>
+</div>
+<!-- Caption / Kredit Foto -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-semibold" for="img-caption">
+              Caption / Kredit Foto
+            </label>
+<input class="w-full px-space-sm py-2 rounded-lg bg-surface-container-lowest text-on-surface font-body-sm text-body-sm outline-none focus:ring-2 focus:ring-primary shadow-sm" id="img-caption" type="text" value="Dok. IncerNews / Antara"/>
+</div>
+</div>
+</section>
+</div>
+</div>
+<!-- STICKY BOTTOM ACTIONS FOR FAST SAVES -->
+<div class="sticky bottom-4 z-30 mt-space-xl p-space-sm rounded-xl bg-surface-container-lowest shadow-xl flex items-center justify-between">
+<div class="flex items-center gap-space-sm text-on-surface-variant font-body-sm text-body-sm">
+<span class="w-2.5 h-2.5 rounded-full bg-primary animate-ping"></span>
+<span>Draf lokal tersimpan otomatis pada pukul <strong>09:14:22 WIB</strong></span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-md py-2 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors" type="button">
+        Simpan sebagai Draf
+      </button>
+<button class="px-space-md py-2 rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container shadow-sm flex items-center gap-1.5 transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">rocket_launch</span>
+<span>Terbitkan ke Publik</span>
+</button>
+</div>
+</div>
+</div>
+<!-- INLINE CLIENT SCRIPT FOR TABS INTERACTION -->
+<script>
+  function switchSeoTab(tabId, el) {
+    // Hide all tab panels
+    const panels = document.querySelectorAll('.seo-tab-panel');
+    panels.forEach(p => p.classList.add('hidden'));
+
+    // Show target panel
+    const target = document.getElementById(tabId);
+    if (target) {
+      target.classList.remove('hidden');
+    }
+
+    // Reset button states
+    const btns = document.querySelectorAll('.tab-btn');
+    btns.forEach(b => {
+      b.classList.remove('bg-surface-container-lowest', 'text-primary', 'shadow-sm', 'font-bold');
+      b.classList.add('text-on-surface-variant', 'font-semibold');
+    });
+
+    // Active button state
+    el.classList.remove('text-on-surface-variant', 'font-semibold');
+    el.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-sm', 'font-bold');
+  }
+</script></main></div></body></html>

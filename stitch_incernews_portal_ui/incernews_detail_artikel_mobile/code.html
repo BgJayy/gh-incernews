@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+
+<html class="light" lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><title>IncerNews - Detail Berita</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "outline": "#6d7a73", "on-primary-fixed-variant": "#00513c", "primary-fixed": "#87f7cd", "secondary-fixed-dim": "#88ceff", "surface-variant": "#dae2fd", "on-secondary-fixed": "#001e2e", "tertiary-container": "#d83739", "primary": "#00694e", "surface-bright": "#faf8ff", "secondary": "#006590", "on-primary-container": "#f5fff8", "on-secondary-fixed-variant": "#004c6d", "secondary-fixed": "#c8e6ff", "on-secondary": "#ffffff", "on-tertiary-fixed-variant": "#930014", "surface": "#faf8ff", "on-surface-variant": "#3d4943", "outline-variant": "#bccac2", "on-tertiary-fixed": "#410004", "surface-dim": "#d2d9f4", "error-container": "#ffdad6", "surface-container-high": "#e2e7ff", "secondary-container": "#88ceff", "tertiary": "#b41b24", "surface-container-highest": "#dae2fd", "on-error": "#ffffff", "on-primary": "#ffffff", "on-primary-fixed": "#002116", "primary-fixed-dim": "#6adbb1", "surface-container-lowest": "#ffffff", "on-surface": "#131b2e", "inverse-primary": "#6adbb1", "on-background": "#131b2e", "on-tertiary-container": "#fffbff", "tertiary-fixed-dim": "#ffb3ae", "inverse-surface": "#283044", "on-error-container": "#93000a", "tertiary-fixed": "#ffdad7", "primary-container": "#008563", "surface-container-low": "#f2f3ff", "on-secondary-container": "#00587e", "inverse-on-surface": "#eef0ff", "error": "#ba1a1a", "surface-container": "#eaedff", "surface-tint": "#006c50", "background": "#faf8ff", "on-tertiary": "#ffffff" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "gutter-tablet": "1.25rem", "margin": "2rem", "space-xl": "2.5rem", "space-sm": "0.5rem", "margin-mobile": "1rem", "space-md": "1rem", "gutter": "1.5rem", "space-lg": "1.5rem", "margin-tablet": "1.5rem", "gutter-mobile": "1rem", "space-xs": "0.25rem" }, fontFamily: { "body-lg": ["Montserrat"], "headline-xl-mobile": ["Montserrat"], "lead-paragraph": ["Montserrat"], "headline-sm": ["Montserrat"], "headline-md": ["Montserrat"], "caption": ["Montserrat"], "body-sm": ["Montserrat"], "display-hero": ["Montserrat"], "label-md": ["Montserrat"], "body-md": ["Montserrat"], "headline-xl": ["Montserrat"], "headline-lg": ["Montserrat"], "display-hero-mobile": ["Montserrat"], "label-caps": ["Montserrat"] }, fontSize: { "body-lg": ["17px", { lineHeight: "28px", letterSpacing: "-0.005em", fontWeight: "400" }], "headline-xl-mobile": ["28px", { lineHeight: "34px", letterSpacing: "-0.015em", fontWeight: "800" }], "lead-paragraph": ["20px", { lineHeight: "32px", letterSpacing: "-0.01em", fontWeight: "500" }], "headline-sm": ["18px", { lineHeight: "24px", letterSpacing: "-0.01em", fontWeight: "700" }], "headline-md": ["22px", { lineHeight: "30px", letterSpacing: "-0.015em", fontWeight: "700" }], "caption": ["12px", { lineHeight: "16px", letterSpacing: "0.01em", fontWeight: "500" }], "body-sm": ["13px", { lineHeight: "20px", letterSpacing: "0em", fontWeight: "400" }], "display-hero": ["56px", { lineHeight: "64px", letterSpacing: "-0.03em", fontWeight: "800" }], "label-md": ["14px", { lineHeight: "18px", letterSpacing: "0em", fontWeight: "600" }], "body-md": ["15px", { lineHeight: "24px", letterSpacing: "0em", fontWeight: "400" }], "headline-xl": ["40px", { lineHeight: "48px", letterSpacing: "-0.025em", fontWeight: "800" }], "headline-lg": ["30px", { lineHeight: "38px", letterSpacing: "-0.02em", fontWeight: "700" }], "display-hero-mobile": ["34px", { lineHeight: "40px", letterSpacing: "-0.02em", fontWeight: "800" }], "label-caps": ["11px", { lineHeight: "14px", letterSpacing: "0.08em", fontWeight: "700" }] } } } };</script><style>@layer base { html, body { width: 100%; margin: 0; padding: 0; min-height: 100%; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-gutter-mobile flex items-center justify-between"><div class="flex items-center gap-space-sm"><button aria-label="Kembali" class="min-w-[44px] min-h-[44px] flex items-center justify-center text-on-surface rounded-lg hover:bg-surface-container-high transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><h1 class="font-headline-sm text-headline-sm text-on-surface truncate max-w-[200px]">Detail Berita</h1></div><div class="flex items-center gap-space-xs"><button aria-label="Bagikan Berita" class="min-w-[44px] min-h-[44px] flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[22px]">share</span></button><button aria-label="Simpan Artikel" class="min-w-[44px] min-h-[44px] flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[22px]">bookmark_border</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-safe bg-surface"><div class="flex flex-col w-full">
+<!-- Reading Progress Tracker -->
+<div class="sticky top-16 z-40 w-full h-1 bg-surface-container-high">
+<div class="h-full bg-primary w-0 transition-all duration-150" id="read-progress"></div>
+</div>
+<div class="px-gutter-mobile py-space-sm flex flex-col gap-space-md">
+<!-- Breadcrumb & Category Badge -->
+<div class="flex flex-wrap items-center justify-between gap-space-xs mt-space-xs">
+<nav class="flex items-center gap-space-xs text-on-surface-variant font-caption text-caption">
+<a class="hover:text-primary transition-colors" href="#">Beranda</a>
+<span>/</span>
+<a class="hover:text-primary transition-colors" href="#">Nasional</a>
+<span>/</span>
+<span class="text-on-surface font-semibold truncate max-w-[120px]">Transisi Energi</span>
+</nav>
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full bg-secondary text-on-secondary font-label-caps text-label-caps">
+        Nasional
+      </span>
+</div>
+<!-- Article Title -->
+<h1 class="font-headline-xl-mobile text-headline-xl-mobile text-on-surface">
+      Transisi Energi Bersih 2030: Strategi Nasional dan Percepatan Infrastruktur Ramah Lingkungan
+    </h1>
+<!-- Author & Editorial Metadata Block -->
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="relative w-10 h-10 rounded-full overflow-hidden bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="Close up professional editorial headshot of Hendra Wijaya, an Indonesian male senior investigative journalist wearing a navy blazer, warm subtle office lighting, high fidelity, 8k" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFCZfsYBhOf34efPB7Ux5VYbq_3Je1MSWZZN_DOgIbH_uKV7gVAezgp5eFZAIZJ_Yeh4e0jflga59fL2i0mVea6vkVb6RIHYhRQzVwR4C6d939bGW0i-f2jbjgjkUa0CZM46-Xv5mVoA1TNSecQjcoT_gnKqWkEo0VGJDMUi1A0GZ27ZvJyFzIs17a45R5qRVTHdQtcxLIvEIRP97gPaZXkoB8yVeZrcqLORwd7w"/>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface">Hendra Wijaya</span>
+<span class="font-caption text-caption text-on-surface-variant">Editor: Citra Lestari</span>
+</div>
+</div>
+<div class="flex items-center gap-1.5 px-2 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-caption text-caption">
+<span class="material-symbols-outlined text-[14px]">timer</span>
+<span>5 min baca</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-space-xs text-on-surface-variant font-caption text-caption">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[15px]">calendar_today</span>
+<span>24 Okt 2024, 09:15 WIB</span>
+</div>
+<!-- TTS Audio Player Button -->
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container text-primary hover:bg-primary hover:text-on-primary transition-all font-label-md text-label-md shadow-sm" id="tts-btn">
+<span class="material-symbols-outlined text-[18px]" id="tts-icon">volume_up</span>
+<span id="tts-label">Dengarkan Berita</span>
+</button>
+</div>
+<!-- Compact Audio Controls Drawer (Hidden by default, toggled via JS) -->
+<div class="hidden flex items-center justify-between bg-surface p-2.5 rounded-lg shadow-sm" id="tts-player">
+<div class="flex items-center gap-2">
+<button class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center" id="tts-play-state">
+<span class="material-symbols-outlined text-[20px]">pause</span>
+</button>
+<div class="flex flex-col">
+<span class="font-caption text-caption font-semibold text-on-surface">Narator AI Suara Bahasa</span>
+<span class="font-caption text-[10px] text-on-surface-variant">00:48 / 04:32</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-2 py-0.5 rounded bg-surface-container font-caption text-[11px] text-on-surface">1.0x</button>
+<button class="text-on-surface-variant hover:text-on-surface" id="tts-close">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Quick Floating / Pinned Social Share Bar -->
+<div class="flex items-center justify-between p-2 rounded-xl bg-surface-container-lowest shadow-sm overflow-x-auto">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase px-2 shrink-0">Bagikan:</span>
+<div class="flex items-center gap-1.5 shrink-0">
+<!-- WhatsApp -->
+<a class="flex items-center gap-1 px-2.5 py-1.5 rounded-full bg-surface-container hover:bg-primary-fixed transition-colors text-primary font-caption text-caption" href="#">
+<span class="material-symbols-outlined text-[16px]">chat</span>
+<span class="font-semibold">WA</span>
+<span class="text-[10px] px-1 rounded-full bg-surface-bright text-on-surface">432</span>
+</a>
+<!-- X (Twitter) -->
+<a class="flex items-center gap-1 px-2.5 py-1.5 rounded-full bg-surface-container hover:bg-secondary-fixed transition-colors text-secondary font-caption text-caption" href="#">
+<span class="material-symbols-outlined text-[16px]">tag</span>
+<span class="font-semibold">X</span>
+<span class="text-[10px] px-1 rounded-full bg-surface-bright text-on-surface">88</span>
+</a>
+<!-- Facebook -->
+<a class="flex items-center gap-1 px-2.5 py-1.5 rounded-full bg-surface-container hover:bg-surface-container-high transition-colors text-on-surface font-caption text-caption" href="#">
+<span class="material-symbols-outlined text-[16px]">share</span>
+<span class="font-semibold">FB</span>
+</a>
+<!-- Salin Tautan -->
+<button class="flex items-center gap-1 px-2.5 py-1.5 rounded-full bg-primary text-on-primary font-caption text-caption hover:opacity-90 transition-opacity" id="copy-btn">
+<span class="material-symbols-outlined text-[16px]">link</span>
+<span id="copy-text">Salin</span>
+</button>
+</div>
+</div>
+<!-- Featured Image -->
+<figure class="flex flex-col gap-1.5">
+<div class="relative w-full aspect-[16/9] rounded-xl overflow-hidden bg-surface-container shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Expansive futuristic floating solar panel farm in Cirata West Java Indonesia, glistening lake waters reflecting deep blue sky, lush green tropical mountain hills in misty background, sharp professional documentary editorial photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQLBGYh2KwjwtIvEKX8TNwpHOuKmDZdm6ydQrh-jsu30CwXLyQB-SB_x7F0lDEOmWEcyB-k1bG3219KUlGc9vFqxp27evhYRzxM0SACj0oRWFokkZXM-qy3NAWVZCncLpWC-5SJNVWJo5yyNgfpN8vGfr1CCHg972ZpCXdbJrVWVI7_OTe1OwFCLiIthdibx9Wcf180LBEAqI6TzWcKCxxoW5hvWB4KO1Mpf6jLw"/>
+<div class="absolute bottom-2 left-2 px-2 py-0.5 rounded bg-inverse-surface/80 backdrop-blur-sm text-inverse-on-surface font-caption text-[11px] flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">photo_camera</span>
+<span>PLTS Terapung Waduk Cirata</span>
+</div>
+</div>
+<figcaption class="font-caption text-caption text-on-surface-variant flex items-center justify-between px-1">
+<span>Pembangkit Listrik Tenaga Surya Terapung berkapasitas 192 MWp.</span>
+<span class="font-medium text-on-surface">Foto: ANTARA / Bagus K</span>
+</figcaption>
+</figure>
+<!-- Main Editorial Article Content -->
+<article class="flex flex-col gap-space-md text-on-surface font-body-lg text-body-lg leading-[1.78]">
+<p>
+<span class="float-left text-[44px] leading-[40px] font-bold text-primary pr-2 pt-1 font-headline-xl">P</span>emerintah Indonesia resmi mengumumkan peta jalan terpadu transisi energi nasional menuju target dekarbonisasi 2030. Langkah percepatan ini berfokus pada penyaluran investasi hijau, modernisasi jaringan transmisi antar-pulau, serta revisi target bauran energi baru terbarukan (EBT) guna memitigasi dampak krisis iklim global.
+      </p>
+<p>
+        Dalam pidato peresmian di Kementerian ESDM, ditekankan bahwa kemandirian energi tidak lagi sekadar opsi keberlanjutan, melainkan pilar ketahanan ekonomi masa depan. Kolaborasi lintas kementerian diproyeksikan membuka lebih dari 250.000 lapangan kerja hijau baru sepanjang lima tahun ke depan.
+      </p>
+<!-- Poin Penting Kebijakan Baru (Callout Box) -->
+<div class="my-space-xs p-space-md rounded-xl bg-surface-container-low shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center gap-2 text-primary font-headline-sm text-headline-sm">
+<span class="material-symbols-outlined text-[24px]">verified</span>
+<span>Poin Penting Kebijakan Baru</span>
+</div>
+<ul class="flex flex-col gap-2.5 font-body-md text-body-md text-on-surface">
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">check_circle</span>
+<span>Penghentian bertahap operasional PLTU batu bara berkapasitas 4,2 GW sebelum tahun 2030.</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">check_circle</span>
+<span>Insentif fiskal penuh dan pembebasan bea masuk suku cadang panel surya fotovoltaik tingkat lanjut.</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">check_circle</span>
+<span>Pembangunan interkoneksi super grid bawah laut lintas pulau Jawa-Sumatera-Kalimantan.</span>
+</li>
+<li class="flex items-start gap-2.5">
+<span class="material-symbols-outlined text-primary text-[20px] shrink-0 mt-0.5">check_circle</span>
+<span>Alokasi dana transisi hijau senilai Rp 85 Triliun dengan pengawasan badan independen.</span>
+</li>
+</ul>
+</div>
+<p>
+        Kesiapan pendanaan internasional melalui mekanisme JETP (Just Energy Transition Partnership) kini mulai disalurkan ke proyek rintisan di Jawa Barat, Sulawesi Tengah, dan Kalimantan Timur. Namun, tantangan regulasi pembebasan lahan dan sinkronisasi kapasitas gardu induk masih menjadi catatan penting para pemangku kepentingan.
+      </p>
+<!-- Editorial Pull Quote -->
+<blockquote class="relative my-space-xs p-space-md rounded-xl bg-surface-container-high shadow-sm">
+<div class="absolute -top-3 left-4 w-7 h-7 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-[18px]">format_quote</span>
+</div>
+<p class="font-lead-paragraph text-lead-paragraph italic text-on-surface pt-1">
+          “Komitmen terhadap dekarbonisasi bukan lagi sekadar wacana multilateral, melainkan cetak biru kedaulatan industri dan perlindungan generasi mendatang di nusantara.”
+        </p>
+<cite class="block font-label-md text-label-md text-primary mt-2 not-italic font-semibold">
+          — Prof. Dr. Aris Danuarta, Pakar Energi ITB
+        </cite>
+</blockquote>
+<!-- Embedded Data Visualization (Inline Responsive Infographic) -->
+<div class="my-space-xs p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Target Bauran Energi 2030</h2>
+<span class="font-caption text-caption text-on-surface-variant">Kapasitas EBT vs Fosil (%)</span>
+</div>
+<span class="material-symbols-outlined text-secondary text-[24px]">analytics</span>
+</div>
+<div class="flex flex-col gap-3 pt-2">
+<!-- Item 1 -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-caption text-caption text-on-surface">
+<span class="font-semibold">Tenaga Surya &amp; Angin</span>
+<span class="text-primary font-bold">34% (Target Naik)</span>
+</div>
+<div class="w-full h-3 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-primary rounded-full transition-all duration-700" style="width: 34%"></div>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="flex justify-between font-caption text-caption text-on-surface">
+<span class="font-semibold">Hidro &amp; Geotermal</span>
+<span class="text-secondary font-bold">28%</span>
+</div>
+<div class="w-full h-3 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-secondary rounded-full transition-all duration-700" style="width: 28%"></div>
+</div>
+<!-- Item 3 -->
+<div class="flex justify-between font-caption text-caption text-on-surface">
+<span class="font-semibold">Transisi Gas Alam</span>
+<span class="text-on-surface-variant font-bold">18%</span>
+</div>
+<div class="w-full h-3 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-outline-variant rounded-full transition-all duration-700" style="width: 18%"></div>
+</div>
+<!-- Item 4 -->
+<div class="flex justify-between font-caption text-caption text-on-surface">
+<span class="font-semibold">Penyusutan Batu Bara</span>
+<span class="text-tertiary font-bold">20% (Fase Turun)</span>
+</div>
+<div class="w-full h-3 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-tertiary rounded-full transition-all duration-700" style="width: 20%"></div>
+</div>
+</div>
+</div>
+<!-- In-Article 'Baca Juga' Box -->
+<aside class="my-space-xs p-space-sm rounded-xl bg-surface-container-low shadow-sm flex items-center gap-space-sm">
+<div class="w-20 h-20 shrink-0 rounded-lg overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="High tech electric bus fleet charging at smart urban transit hub station in Jakarta, clean modern transportation atmosphere, sunny day" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYQz0FDfDwNIFoThRYJ-j_P9u97LP_xgbFKif1ZIpy6CXG2BnGHrX3lps8wBzUsj1SrcUPS_JKaocnBCuj1DOLzN53Byu9Ef65liUjVhGwxoI54N_dPI3t6GVI77BrDX2AeWhOYxTJOk9d2XGjDpkLG7URvL7xRjugpbJk7b3kH6X2SFaMOHqiAUr_Wm1QBlMzTv79eKJJsVEMID0_X_o2enmz6r8trHzBVw_WzQ"/>
+</div>
+<div class="flex flex-col justify-center min-w-0">
+<span class="font-label-caps text-label-caps text-secondary uppercase font-bold">Baca Juga</span>
+<a class="font-headline-sm text-[15px] leading-tight text-on-surface hover:text-primary transition-colors line-clamp-2 mt-0.5" href="#">
+            Pemerintah Uji Coba Koridor Bus Listrik Cerdas di 5 Kota Metropolitan
+          </a>
+<span class="font-caption text-[11px] text-on-surface-variant mt-1">2 jam yang lalu • 4 min baca</span>
+</div>
+</aside>
+<p>
+        Dengan pelibatan aktif pemerintah daerah dan sektor swasta, langkah besar ini diharapkan mampu memantapkan kedaulatan industri ramah lingkungan di Indonesia, sekaligus menjadi tolak ukur negara berkembang di kawasan Asia Pasifik.
+      </p>
+</article>
+<!-- Interactive Reader Reaction Bar -->
+<section class="mt-space-md p-space-md rounded-xl bg-surface-container-low shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<h3 class="font-label-md text-label-md text-on-surface font-bold">Bagaimana reaksi Anda?</h3>
+<span class="font-caption text-caption text-on-surface-variant">243 pembaca merespons</span>
+</div>
+<div class="grid grid-cols-3 gap-space-xs">
+<!-- Option 1 -->
+<button class="reaction-card flex flex-col items-center justify-center p-2.5 rounded-lg bg-surface hover:bg-surface-container-high transition-all shadow-sm" onclick="castVote(this)">
+<span class="text-2xl mb-1">💡</span>
+<span class="font-caption text-caption font-semibold text-on-surface">Informatif</span>
+<span class="counter-num font-caption text-[11px] text-primary font-bold mt-0.5">142</span>
+</button>
+<!-- Option 2 -->
+<button class="reaction-card flex flex-col items-center justify-center p-2.5 rounded-lg bg-surface hover:bg-surface-container-high transition-all shadow-sm" onclick="castVote(this)">
+<span class="text-2xl mb-1">🔥</span>
+<span class="font-caption text-caption font-semibold text-on-surface">Inspiratif</span>
+<span class="counter-num font-caption text-[11px] text-primary font-bold mt-0.5">89</span>
+</button>
+<!-- Option 3 -->
+<button class="reaction-card flex flex-col items-center justify-center p-2.5 rounded-lg bg-surface hover:bg-surface-container-high transition-all shadow-sm" onclick="castVote(this)">
+<span class="text-2xl mb-1">🧐</span>
+<span class="font-caption text-caption font-semibold text-on-surface">Kritis</span>
+<span class="counter-num font-caption text-[11px] text-primary font-bold mt-0.5">12</span>
+</button>
+</div>
+</section>
+<!-- Topic Tags Row -->
+<div class="flex flex-wrap gap-2 pt-space-xs">
+<a class="px-3 py-1 rounded-full bg-surface-container hover:bg-primary hover:text-on-primary transition-colors text-on-surface font-caption text-caption" href="#">#EnergiTerbarukan</a>
+<a class="px-3 py-1 rounded-full bg-surface-container hover:bg-primary hover:text-on-primary transition-colors text-on-surface font-caption text-caption" href="#">#PLTS</a>
+<a class="px-3 py-1 rounded-full bg-surface-container hover:bg-primary hover:text-on-primary transition-colors text-on-surface font-caption text-caption" href="#">#KebijakanNasional</a>
+<a class="px-3 py-1 rounded-full bg-surface-container hover:bg-primary hover:text-on-primary transition-colors text-on-surface font-caption text-caption" href="#">#NetZero2030</a>
+</div>
+<!-- Author Bio Card -->
+<div class="mt-space-sm p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-12 h-12 rounded-full overflow-hidden bg-surface-container shrink-0">
+<img class="w-full h-full object-cover" data-alt="Portrait photo of Hendra Wijaya smiling warmly with glasses, Indonesian journalist, high quality crisp photo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtrz0MWXQuVgS3jM6ronbNbSF3BAvFX0Ez60jeuyUp3jBrwcEKG4qdk39p0jnNhjLNrJffxg-iEgdC9eOFirlHaa5Fg01XikWUSAHc8wig3eYusXcSr8WGqRfW4X59Ou3G8GYCdp1-j8JrzGeonShmV73WLjTd0MFjmv0SENM8XwuvWVJkXyZ7NtvFphdeec-kxPyFKLakNzXNQCXS9F0NwBz9C8V6r2eZtMLYmA"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface truncate">Hendra Wijaya</span>
+<span class="font-caption text-[11px] text-on-surface-variant line-clamp-1">Spesialis Liputan Transisi Energi &amp; Kebijakan Publik</span>
+</div>
+</div>
+<button class="shrink-0 px-3 py-1.5 rounded-lg bg-primary text-on-primary hover:bg-primary-container font-label-md text-label-md transition-colors flex items-center gap-1 shadow-sm" id="follow-author-btn">
+<span class="material-symbols-outlined text-[16px]">add</span>
+<span>Ikuti</span>
+</button>
+</div>
+<!-- Recommendations Section: Berita Terkait -->
+<section class="mt-space-md mb-space-lg flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Rekomendasi Berita Terkait</h3>
+<a class="font-label-md text-label-md text-secondary flex items-center gap-0.5 hover:underline" href="#">
+          Lihat Semua <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+<div class="flex flex-col gap-space-sm">
+<!-- Related Card 1 -->
+<a class="flex gap-space-sm p-space-sm rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow" href="#">
+<div class="w-24 h-20 rounded-lg overflow-hidden bg-surface-container shrink-0">
+<img class="w-full h-full object-cover" data-alt="Wind turbines rotating over scenic coastal landscape in South Sulawesi Indonesia, cinematic golden hour lighting, journalistic photo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrZJFjZqoAyyHtwAjiwCFmV_lEPXmJBucx6Ohv-Aw25O0r2eQNtYeuHMEkOIdhPnj0S9e0alHBhbvm7NmRi7VREF4TeKusvcszM8Xvnmyq1AFU5mw58YdXUo-tPuFJAQeLxtiLS4_TzVOaGjc1a0_aS3TL6goCHVjyNJOB_cM0P4Ka5OOGiQoRshAIGiQuajcpx5ufzxJIEv7JgY7aF4Lp2pY16LV4CjNf1nqz9g"/>
+</div>
+<div class="flex flex-col justify-between min-w-0 flex-1">
+<span class="font-label-caps text-label-caps text-secondary font-bold">Infrastruktur</span>
+<h4 class="font-headline-sm text-[14px] leading-tight text-on-surface line-clamp-2">
+              Ekspansi PLTB Jeneponto Tahap II Siap Pasok 150 Ribu Rumah Tangga
+            </h4>
+<span class="font-caption text-[11px] text-on-surface-variant">3 jam lalu • Hendra Wijaya</span>
+</div>
+</a>
+<!-- Related Card 2 -->
+<a class="flex gap-space-sm p-space-sm rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow" href="#">
+<div class="w-24 h-20 rounded-lg overflow-hidden bg-surface-container shrink-0">
+<img class="w-full h-full object-cover" data-alt="International economic summit conference room in Jakarta, delegates talking in background, clean modern high end press photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhmNXmIbtr2Ce4joIf7a5xPNlpaMNSBpZuuwwxu32jmIV96X0MkQlkr4v-w91jYXv83XoMJmO8jHS2Kc7Rb7biya3PmHHTQflxiq82Wm5SIqznmbRTtCcvDEwl18w-CBkY6_1SCpMVzzTs-EpPTH9_vpdI5ChRF8j0cJNqdYSQ5acQZsbREM0Q4qovQo7qygdjKm97s6K6sG_N4zBFZ99AiZ1pZHxBIh03XpEQDQ"/>
+</div>
+<div class="flex flex-col justify-between min-w-0 flex-1">
+<span class="font-label-caps text-label-caps text-primary font-bold">Ekonomi Hijau</span>
+<h4 class="font-headline-sm text-[14px] leading-tight text-on-surface line-clamp-2">
+              Kemenkeu Kaji Skema Pajak Karbon untuk Perusahaan Manufaktur Berat
+            </h4>
+<span class="font-caption text-[11px] text-on-surface-variant">5 jam lalu • Citra Lestari</span>
+</div>
+</a>
+<!-- Related Card 3 -->
+<a class="flex gap-space-sm p-space-sm rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow" href="#">
+<div class="w-24 h-20 rounded-lg overflow-hidden bg-surface-container shrink-0">
+<img class="w-full h-full object-cover" data-alt="Modern rooftop solar panels installation on government building in Nusantara new capital city, pristine architecture, bright daylight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEgAXzDtspm3MH1APWDRxPZMc1LZ3zoniKuBFMUJ2NDZYS4ezds9AEKrt_raGwV3qI8fLcQL3TRluxsN6stGSb-8BTf0BCjnYO5ccipXW3lnbvX8c0vFoR_Acgq5r38V8VcK0u1384VdR357v6Lopaf-Yv-hlr2bvA6pymfQWT2ptZ8gzOqpcLu1_Vueu-OAKOJYg0yP8pPBxFhautTPGZ3l1NJZLHl8lNyzV8gw"/>
+</div>
+<div class="flex flex-col justify-between min-w-0 flex-1">
+<span class="font-label-caps text-label-caps text-tertiary font-bold">IKN Nusantara</span>
+<h4 class="font-headline-sm text-[14px] leading-tight text-on-surface line-clamp-2">
+              Pembangunan Kawasan Inti IKN Dipercepat dengan Mandat Pasokan Energi Bersih 100%
+            </h4>
+<span class="font-caption text-[11px] text-on-surface-variant">Kemarin • Rian Pratama</span>
+</div>
+</a>
+</div>
+</section>
+</div>
+</div>
+<script>
+  // Dynamic Scroll Progress
+  window.addEventListener('scroll', () => {
+    const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const progress = (window.scrollY / totalHeight) * 100;
+    const bar = document.getElementById('read-progress');
+    if (bar) {
+      bar.style.width = Math.min(100, Math.max(0, progress)) + '%';
+    }
+  });
+
+  // TTS Player Drawer Toggle
+  const ttsBtn = document.getElementById('tts-btn');
+  const ttsPlayer = document.getElementById('tts-player');
+  const ttsClose = document.getElementById('tts-close');
+  const ttsIcon = document.getElementById('tts-icon');
+  const ttsLabel = document.getElementById('tts-label');
+
+  if (ttsBtn && ttsPlayer && ttsClose) {
+    ttsBtn.addEventListener('click', () => {
+      const isHidden = ttsPlayer.classList.contains('hidden');
+      if (isHidden) {
+        ttsPlayer.classList.remove('hidden');
+        ttsIcon.textContent = 'pause_circle';
+        ttsLabel.textContent = 'Putar Narasi';
+      } else {
+        ttsPlayer.classList.add('hidden');
+        ttsIcon.textContent = 'volume_up';
+        ttsLabel.textContent = 'Dengarkan Berita';
+      }
+    });
+
+    ttsClose.addEventListener('click', () => {
+      ttsPlayer.classList.add('hidden');
+      ttsIcon.textContent = 'volume_up';
+      ttsLabel.textContent = 'Dengarkan Berita';
+    });
+  }
+
+  // Quick Copy Action
+  const copyBtn = document.getElementById('copy-btn');
+  const copyText = document.getElementById('copy-text');
+  if (copyBtn && copyText) {
+    copyBtn.addEventListener('click', () => {
+      navigator.clipboard?.writeText(window.location.href);
+      copyText.textContent = 'Tersalin!';
+      setTimeout(() => {
+        copyText.textContent = 'Salin';
+      }, 2000);
+    });
+  }
+
+  // Author Follow Action
+  const followBtn = document.getElementById('follow-author-btn');
+  if (followBtn) {
+    followBtn.addEventListener('click', () => {
+      const isFollowing = followBtn.classList.contains('bg-surface-container');
+      if (isFollowing) {
+        followBtn.className = 'shrink-0 px-3 py-1.5 rounded-lg bg-primary text-on-primary hover:bg-primary-container font-label-md text-label-md transition-colors flex items-center gap-1 shadow-sm';
+        followBtn.innerHTML = '<span class="material-symbols-outlined text-[16px]">add</span><span>Ikuti</span>';
+      } else {
+        followBtn.className = 'shrink-0 px-3 py-1.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md transition-colors flex items-center gap-1';
+        followBtn.innerHTML = '<span class="material-symbols-outlined text-[16px]">check</span><span>Mengikuti</span>';
+      }
+    });
+  }
+
+  // Reaction Button Poll
+  function castVote(btn) {
+    const parent = btn.parentElement;
+    parent.querySelectorAll('.reaction-card').forEach(card => {
+      card.classList.remove('bg-primary-fixed', 'text-on-primary-fixed');
+      card.classList.add('bg-surface');
+    });
+    btn.classList.remove('bg-surface');
+    btn.classList.add('bg-primary-fixed', 'text-on-primary-fixed');
+    
+    const countEl = btn.querySelector('.counter-num');
+    if (countEl && !btn.dataset.voted) {
+      countEl.textContent = parseInt(countEl.textContent, 10) + 1;
+      btn.dataset.voted = 'true';
+    }
+  }
+</script></main></body></html>

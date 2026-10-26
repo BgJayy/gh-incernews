@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "secondary-fixed-dim": "#88ceff", "on-tertiary": "#ffffff", "error-container": "#ffdad6", "tertiary": "#b41b24", "on-secondary-fixed": "#001e2e", "on-secondary-container": "#00587e", "on-surface": "#131b2e", "tertiary-fixed-dim": "#ffb3ae", "surface-bright": "#faf8ff", "surface": "#faf8ff", "surface-container-lowest": "#ffffff", "surface-container": "#eaedff", "outline": "#6d7a73", "secondary-fixed": "#c8e6ff", "on-background": "#131b2e", "surface-container-high": "#e2e7ff", "inverse-on-surface": "#eef0ff", "on-error-container": "#93000a", "on-secondary-fixed-variant": "#004c6d", "surface-container-low": "#f2f3ff", "primary-fixed-dim": "#6adbb1", "surface-variant": "#dae2fd", "secondary-container": "#88ceff", "on-primary": "#ffffff", "on-secondary": "#ffffff", "tertiary-container": "#d83739", "inverse-primary": "#6adbb1", "background": "#faf8ff", "on-error": "#ffffff", "surface-container-highest": "#dae2fd", "surface-dim": "#d2d9f4", "on-primary-container": "#f5fff8", "on-surface-variant": "#3d4943", "primary-fixed": "#87f7cd", "primary-container": "#008563", "tertiary-fixed": "#ffdad7", "on-tertiary-fixed-variant": "#930014", "inverse-surface": "#283044", "on-tertiary-container": "#fffbff", "on-primary-fixed": "#002116", "on-primary-fixed-variant": "#00513c", "primary": "#00694e", "on-tertiary-fixed": "#410004", "error": "#ba1a1a", "surface-tint": "#006c50", "outline-variant": "#bccac2", "secondary": "#006590" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-lg": "1.5rem", "space-xs": "0.25rem", "space-xl": "2.5rem", "margin": "2rem", "gutter": "1.5rem", "gutter-mobile": "1rem", "space-sm": "0.5rem", "space-md": "1rem", "margin-tablet": "1.5rem", "gutter-tablet": "1.25rem", "margin-mobile": "1rem" }, "fontFamily": { "lead-paragraph": [ "Montserrat" ], "headline-lg": [ "Montserrat" ], "headline-md": [ "Montserrat" ], "display-hero-mobile": [ "Montserrat" ], "headline-sm": [ "Montserrat" ], "headline-xl": [ "Montserrat" ], "display-hero": [ "Montserrat" ], "caption": [ "Montserrat" ], "label-caps": [ "Montserrat" ], "body-sm": [ "Montserrat" ], "body-lg": [ "Montserrat" ], "body-md": [ "Montserrat" ], "label-md": [ "Montserrat" ], "headline-xl-mobile": [ "Montserrat" ] }, "fontSize": { "lead-paragraph": [ "20px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "500" } ], "headline-lg": [ "30px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "700" } ], "headline-md": [ "22px", { "lineHeight": "30px", "letterSpacing": "-0.015em", "fontWeight": "700" } ], "display-hero-mobile": [ "34px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "800" } ], "headline-sm": [ "18px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "700" } ], "headline-xl": [ "40px", { "lineHeight": "48px", "letterSpacing": "-0.025em", "fontWeight": "800" } ], "display-hero": [ "56px", { "lineHeight": "64px", "letterSpacing": "-0.03em", "fontWeight": "800" } ], "caption": [ "12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "500" } ], "label-caps": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "700" } ], "body-sm": [ "13px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" } ], "body-lg": [ "17px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "400" } ], "body-md": [ "15px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" } ], "label-md": [ "14px", { "lineHeight": "18px", "letterSpacing": "0em", "fontWeight": "600" } ], "headline-xl-mobile": [ "28px", { "lineHeight": "34px", "letterSpacing": "-0.015em", "fontWeight": "800" } ] } } } };</script></head><body class="bg-surface text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between overflow-y-auto"><div class="flex flex-col"><div class="h-16 px-space-md flex items-center justify-between border-b border-surface-container-high"><div class="flex items-center gap-space-xs"><div class="w-8 h-8 rounded-lg bg-primary-container flex items-center justify-center text-on-primary-container font-headline-sm text-headline-sm font-bold">I</div><span class="font-headline-md text-headline-md font-bold tracking-tight text-on-surface">Incer<span class="text-primary">News</span></span></div><span class="px-space-xs py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-caps text-label-caps">CMS v2.0</span></div><nav class="px-space-sm py-space-md space-y-space-md" data-active-classes="bg-primary-container text-on-primary-container font-bold rounded-lg"><div class="space-y-space-xs"><div class="px-space-xs font-label-caps text-label-caps text-outline uppercase tracking-wider">Utama</div><a aria-current="page" class="flex items-center justify-between px-space-sm py-space-xs transition-colors bg-primary-container text-on-primary-container font-bold rounded-lg" data-path="dashboard" href="#"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[20px]">grid_view</span><span class="font-label-md text-label-md">Dashboard</span></div></a></div><div class="space-y-space-xs"><div class="px-space-xs font-label-caps text-label-caps text-outline uppercase tracking-wider">Manajemen Konten</div><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="artikel-berita" href="#"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[20px]">newspaper</span><span class="font-label-md text-label-md">Artikel Berita</span></div><span class="px-space-xs py-0.5 rounded-full bg-secondary text-on-secondary font-label-caps text-label-caps">142</span></a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="kategori" href="#"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[20px]">category</span><span class="font-label-md text-label-md">Kategori</span></div></a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="tag-dan-topik" href="#"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[20px]">label</span><span class="font-label-md text-label-md">Tag &amp; Topik</span></div></a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="galeri-media" href="#"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[20px]">photo_library</span><span class="font-label-md text-label-md">Galeri Media</span></div></a></div><div class="space-y-space-xs"><div class="px-space-xs font-label-caps text-label-caps text-outline uppercase tracking-wider">Optimasi &amp; Moneter</div><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="seo-dan-sitemap" href="#"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[20px]">query_stats</span><span class="font-label-md text-label-md">SEO &amp; Sitemap Monitor</span></div></a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="manajemen-banner-iklan" href="#"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[20px]">ad</span><span class="font-label-md text-label-md">Manajemen Banner Iklan</span></div></a></div><div class="space-y-space-xs"><div class="px-space-xs font-label-caps text-label-caps text-outline uppercase tracking-wider">Sistem</div><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="manajemen-user-dan-role" href="#"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[20px]">manage_accounts</span><span class="font-label-md text-label-md">Manajemen User &amp; Role</span></div></a><a class="flex items-center justify-between px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="pengaturan-web" href="#"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[20px]">settings</span><span class="font-label-md text-label-md">Pengaturan Web</span></div></a></div></nav></div><div class="p-space-sm border-t border-surface-container-high"><a class="flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg text-tertiary hover:bg-error-container hover:text-on-error-container transition-colors" data-path="login" href="#"><span class="material-symbols-outlined text-[20px]">logout</span><span class="font-label-md text-label-md">Keluar Sesi</span></a></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-md border-b border-surface-container-high"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface-variant"><a class="hover:text-primary transition-colors flex items-center gap-1" data-path="dashboard" href="#"><span class="material-symbols-outlined text-[16px]">home</span><span>Admin</span></a><span>/</span><span class="font-label-md text-label-md text-on-surface">Dashboard</span></div><div class="hidden md:flex items-center gap-space-xs bg-surface-container px-space-sm py-1.5 rounded-lg text-on-surface-variant w-80"><span class="material-symbols-outlined text-[18px]">search</span><span class="font-body-sm text-body-sm flex-1 select-none">Cari menu atau berita...</span><kbd class="px-1.5 py-0.5 rounded bg-surface-container-lowest text-on-surface-variant font-caption text-caption shadow-[0_1px_2px_rgba(0,0,0,0.05)]">Ctrl+K</kbd></div></div><div class="flex items-center gap-space-sm"><a class="hidden lg:flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg border border-secondary text-secondary hover:bg-secondary hover:text-on-secondary transition-colors font-label-md text-label-md" data-path="live-portal" href="#" target="_blank"><span class="material-symbols-outlined text-[16px]">open_in_new</span><span>Lihat Website</span></a><a class="flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg bg-primary-container text-on-primary-container hover:bg-primary hover:text-on-primary transition-colors font-label-md text-label-md shadow-[0_1px_4px_rgba(0,105,78,0.16)]" data-path="tulis-berita" href="#"><span class="material-symbols-outlined text-[18px]">add</span><span>Tulis Berita</span></a><div class="relative"><button class="w-9 h-9 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors relative"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-tertiary-container"></span></button></div><div class="h-6 w-px bg-surface-container-high mx-space-xs"></div><div class="flex items-center gap-space-xs"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="hidden xl:flex flex-col"><span class="font-label-md text-label-md leading-tight text-on-surface">Arif Hidayat</span><span class="font-caption text-caption leading-tight text-on-surface-variant">Super Admin</span></div><span class="material-symbols-outlined text-on-surface-variant text-[18px]">expand_more</span></div></div></header><main class="relative pt-16 bg-surface min-h-screen px-space-md py-space-md"><div class="flex flex-col w-full space-y-space-lg">
+<!-- Top Operational Banner & Breadcrumb Strip -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm bg-surface-container-lowest p-space-md rounded-xl shadow-sm">
+<div class="space-y-1">
+<div class="flex items-center gap-space-xs font-body-sm text-body-sm text-on-surface-variant">
+<a class="hover:text-primary transition-colors flex items-center gap-1 font-medium" href="#">
+<span class="material-symbols-outlined text-[16px]">speed</span>
+<span>Dashboard</span>
+</a>
+<span>/</span>
+<span class="font-label-md text-label-md text-primary font-bold">Ringkasan</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight">
+        Dashboard Editorial &amp; SEO Monitor
+      </h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+        Pantau metrik pembaca, kesiapan SEO, dan status pengindeksan Google secara real-time untuk seluruh kanal pemberitaan IncerNews.
+      </p>
+</div>
+<!-- Quick Action Toolbar -->
+<div class="flex flex-wrap items-center gap-space-xs self-start md:self-auto">
+<!-- Periode Dropdown -->
+<div class="relative inline-block text-left">
+<button class="flex items-center gap-space-xs px-space-sm py-2 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container font-label-md text-label-md transition-colors shadow-sm" id="periodBtn">
+<span class="material-symbols-outlined text-[18px] text-secondary">calendar_today</span>
+<span>30 Hari Terakhir</span>
+<span class="material-symbols-outlined text-[18px] text-outline">expand_more</span>
+</button>
+</div>
+<!-- Export Laporan -->
+<button class="flex items-center gap-space-xs px-space-sm py-2 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container font-label-md text-label-md transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[18px] text-outline">download</span>
+<span>Export Laporan</span>
+</button>
+<!-- Tulis Berita Utama CTA -->
+<a class="flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-primary text-on-primary hover:bg-primary-container font-label-md text-label-md shadow-md transition-all active:scale-[0.99]" data-path="tulis-berita" href="#">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span>+ Tulis Berita</span>
+</a>
+</div>
+</div>
+<!-- Stats Metric Cards (4 Grid) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Stat 1: Total Artikel Terbit -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-all relative overflow-hidden group">
+<div class="absolute -right-4 -bottom-4 w-24 h-24 bg-secondary/5 rounded-full blur-xl group-hover:scale-125 transition-transform"></div>
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant font-bold tracking-wider">Total Artikel Terbit</span>
+<div class="w-10 h-10 rounded-lg bg-secondary/10 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[22px]">newspaper</span>
+</div>
+</div>
+<div class="mt-space-sm flex items-baseline gap-2">
+<span class="font-headline-xl text-headline-xl font-bold text-on-surface tracking-tight">1,284</span>
+<span class="font-caption text-caption text-on-surface-variant">konten</span>
+</div>
+<div class="mt-space-sm flex items-center gap-space-xs">
+<span class="inline-flex items-center gap-0.5 px-2 py-0.5 rounded-full bg-primary/10 text-primary font-caption text-caption font-bold">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+          +12% bulan ini
+        </span>
+<span class="font-caption text-caption text-on-surface-variant">vs 1,146 lalu</span>
+</div>
+</div>
+<!-- Stat 2: Rata-rata Skor SEO -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-all relative overflow-hidden group">
+<div class="absolute -right-4 -bottom-4 w-24 h-24 bg-primary/5 rounded-full blur-xl group-hover:scale-125 transition-transform"></div>
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant font-bold tracking-wider">Rata-rata Skor SEO</span>
+<div class="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+</div>
+<div class="mt-space-sm flex items-center justify-between">
+<div class="flex items-baseline gap-1">
+<span class="font-headline-xl text-headline-xl font-bold text-primary tracking-tight">88</span>
+<span class="font-body-sm text-body-sm text-outline">/ 100</span>
+</div>
+<!-- Progress Circular Indicator -->
+<div class="relative w-11 h-11 flex items-center justify-center">
+<svg class="w-full h-full -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-container" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-primary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="88, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<span class="absolute font-caption text-[10px] font-bold text-primary">88%</span>
+</div>
+</div>
+<div class="mt-space-sm flex items-center gap-space-xs">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-primary-fixed-dim/40 text-on-primary-fixed-variant font-caption text-caption font-bold">
+          Target &gt; 80% Terpenuhi (Optimal)
+        </span>
+</div>
+</div>
+<!-- Stat 3: Status Google Index (GSC) -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-all relative overflow-hidden group">
+<div class="absolute -right-4 -bottom-4 w-24 h-24 bg-secondary/5 rounded-full blur-xl group-hover:scale-125 transition-transform"></div>
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant font-bold tracking-wider">Status Google Index (GSC)</span>
+<div class="w-10 h-10 rounded-lg bg-secondary-fixed/50 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[22px]">public</span>
+</div>
+</div>
+<div class="mt-space-sm flex items-baseline gap-2">
+<span class="font-headline-xl text-headline-xl font-bold text-secondary tracking-tight">98.4%</span>
+<span class="font-label-md text-label-md font-bold text-primary">Terindeks</span>
+</div>
+<div class="mt-space-sm flex items-center gap-2">
+<span class="relative flex h-2 w-2">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+</span>
+<span class="font-caption text-caption text-on-surface-variant font-medium">Sitemap XML: Aktif (Auto-Ping)</span>
+</div>
+</div>
+<!-- Stat 4: Antrean Review Editor -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm hover:shadow-md transition-all relative overflow-hidden group">
+<div class="absolute -right-4 -bottom-4 w-24 h-24 bg-tertiary/5 rounded-full blur-xl group-hover:scale-125 transition-transform"></div>
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase text-on-surface-variant font-bold tracking-wider">Antrean Review Redaksi</span>
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[22px]">schedule</span>
+</div>
+</div>
+<div class="mt-space-sm flex items-baseline gap-2">
+<span class="font-headline-xl text-headline-xl font-bold text-on-surface tracking-tight">7</span>
+<span class="font-body-md text-body-md text-tertiary-container font-bold">Draf Menunggu</span>
+</div>
+<div class="mt-space-sm flex items-center gap-space-xs">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-caption text-caption font-bold">
+<span class="material-symbols-outlined text-[12px]">priority_high</span>
+          Menunggu persetujuan redaksi
+        </span>
+</div>
+</div>
+</div>
+<!-- Middle Charts Row (8 Columns Left, 4 Columns Right) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md">
+<!-- Left 8-Cols: Line/Area Chart Visitors & Organic Search Clicks -->
+<div class="lg:col-span-8 bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm pb-space-sm">
+<div>
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface">
+                Tren Kunjungan Pembaca &amp; Klik Pencarian Google
+              </h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+              Korelasi antara total sesi pembaca dengan organic traffic Google (30 Hari Terakhir).
+            </p>
+</div>
+<!-- Channel Filter Tabs -->
+<div class="flex items-center bg-surface-container p-1 rounded-lg self-start sm:self-auto text-on-surface-variant font-label-caps text-label-caps">
+<button class="px-3 py-1 rounded bg-surface-container-lowest font-bold text-on-surface shadow-sm">Semua Kanal</button>
+<button class="px-3 py-1 rounded hover:text-on-surface transition-colors">Organik Google</button>
+<button class="px-3 py-1 rounded hover:text-on-surface transition-colors">Direct</button>
+</div>
+</div>
+<!-- Legend indicators -->
+<div class="flex items-center gap-space-md pt-space-xs pb-space-sm font-caption text-caption">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-secondary"></span>
+<span class="text-on-surface font-semibold">Total Pembaca (Sessions)</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-primary"></span>
+<span class="text-on-surface font-semibold">Klik Google Search (GSC Clicks)</span>
+</div>
+</div>
+<!-- Interactive Vector Chart -->
+<div class="relative w-full h-64 mt-2">
+<svg class="w-full h-full overflow-visible" preserveaspectratio="none" viewbox="0 0 760 220">
+<defs>
+<!-- Gradient for Pembaca (#006590) -->
+<lineargradient id="blueGradient" x1="0%" x2="0%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#006590" stop-opacity="0.30"></stop>
+<stop offset="100%" stop-color="#006590" stop-opacity="0.00"></stop>
+</lineargradient>
+<!-- Gradient for GSC (#1a9b76 / primary) -->
+<lineargradient id="greenGradient" x1="0%" x2="0%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#00694e" stop-opacity="0.35"></stop>
+<stop offset="100%" stop-color="#00694e" stop-opacity="0.00"></stop>
+</lineargradient>
+</defs>
+<!-- Horizontal Grid lines -->
+<line stroke="#eaedff" stroke-dasharray="3 3" stroke-width="1" x1="0" x2="760" y1="20" y2="20"></line>
+<line stroke="#eaedff" stroke-dasharray="3 3" stroke-width="1" x1="0" x2="760" y1="70" y2="70"></line>
+<line stroke="#eaedff" stroke-dasharray="3 3" stroke-width="1" x1="0" x2="760" y1="120" y2="120"></line>
+<line stroke="#eaedff" stroke-dasharray="3 3" stroke-width="1" x1="0" x2="760" y1="170" y2="170"></line>
+<line opacity="0.4" stroke="#bccac2" stroke-width="1" x1="0" x2="760" y1="210" y2="210"></line>
+<!-- Area 1: Total Pembaca (Blue: #006590) -->
+<polygon fill="url(#blueGradient)" points="0,210 0,140 70,125 140,110 210,135 280,95 350,85 420,105 490,60 560,50 630,75 700,45 760,35 760,210"></polygon>
+<!-- Line 1: Total Pembaca -->
+<path d="M0,140 L70,125 L140,110 L210,135 L280,95 L350,85 L420,105 L490,60 L560,50 L630,75 L700,45 L760,35" fill="none" stroke="#006590" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path>
+<!-- Area 2: Klik GSC (Green: #00694e) -->
+<polygon fill="url(#greenGradient)" points="0,210 0,175 70,165 140,150 210,170 280,140 350,135 420,150 490,115 560,105 630,120 700,95 760,80 760,210"></polygon>
+<!-- Line 2: Klik GSC -->
+<path d="M0,175 L70,165 L140,150 L210,170 L280,140 L350,135 L420,150 L490,115 L560,105 L630,120 L700,95 L760,80" fill="none" stroke="#00694e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+<!-- Data Point & Peak Tooltip on Day 25 (X=630) -->
+<circle cx="560" cy="50" fill="#006590" r="5" stroke="#ffffff" stroke-width="2"></circle>
+<circle cx="560" cy="105" fill="#00694e" r="5" stroke="#ffffff" stroke-width="2"></circle>
+<circle class="animate-pulse" cx="700" cy="45" fill="#006590" r="6" stroke="#ffffff" stroke-width="2"></circle>
+<!-- Peak Indicator Badge -->
+<g transform="translate(640, 10)">
+<rect fill="#131b2e" height="34" opacity="0.9" rx="4" width="115"></rect>
+<text fill="#88ceff" font-family="Montserrat" font-size="9" font-weight="600" x="8" y="15">PEAK TRAFFIC</text>
+<text fill="#ffffff" font-family="Montserrat" font-size="10" font-weight="700" x="8" y="27">18.4K Pengunjung</text>
+</g>
+</svg>
+<!-- X-Axis Labels -->
+<div class="flex justify-between items-center text-outline font-caption text-[11px] pt-1">
+<span>01 Mei</span>
+<span>06 Mei</span>
+<span>12 Mei</span>
+<span>18 Mei</span>
+<span>24 Mei</span>
+<span>30 Mei (Hari ini)</span>
+</div>
+</div>
+</div>
+<!-- Stats Summary Strip Footer -->
+<div class="grid grid-cols-3 gap-2 p-space-sm bg-surface-container-low rounded-lg mt-space-md">
+<div class="flex flex-col">
+<span class="font-caption text-caption text-on-surface-variant font-medium">Total Kunjungan</span>
+<span class="font-headline-sm text-headline-sm font-bold text-secondary">428,500</span>
+<span class="font-caption text-[11px] text-primary font-semibold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[13px]">arrow_upward</span> +18.2%
+          </span>
+</div>
+<div class="flex flex-col">
+<span class="font-caption text-caption text-on-surface-variant font-medium">Total Klik GSC</span>
+<span class="font-headline-sm text-headline-sm font-bold text-primary">184,200</span>
+<span class="font-caption text-[11px] text-primary font-semibold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[13px]">arrow_upward</span> +24.1%
+          </span>
+</div>
+<div class="flex flex-col">
+<span class="font-caption text-caption text-on-surface-variant font-medium">Rata-rata CTR</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">6.4%</span>
+<span class="font-caption text-[11px] text-on-surface-variant">Posisi Avg: #4.2</span>
+</div>
+</div>
+</div>
+<!-- Right 4-Cols: Category Distribution Donut Chart -->
+<div class="lg:col-span-4 bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="pb-space-xs">
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface">Distribusi Berita</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Proporsi artikel terbit per 5 kategori utama</p>
+</div>
+<!-- SVG Donut Chart with Centered Metric -->
+<div class="relative w-44 h-44 mx-auto my-3 flex items-center justify-center">
+<svg class="w-full h-full -rotate-90 transform" viewbox="0 0 100 100">
+<!-- Background circle -->
+<circle cx="50" cy="50" fill="transparent" r="38" stroke="#f2f3ff" stroke-width="14"></circle>
+<!-- Segment 1: Nasional 38% -> offset 0, dash 38 of 100 -> dasharray 90.7 238.7 (r=38, C=238.76) -->
+<!-- Nasional (#00694e): 38% = 90.7 -->
+<circle cx="50" cy="50" fill="transparent" r="38" stroke="#00694e" stroke-dasharray="90.7 238.7" stroke-dashoffset="0" stroke-width="14"></circle>
+<!-- Segment 2: Daerah 24% = 57.3 -> offset -90.7 -->
+<!-- Daerah (#006590): 24% -->
+<circle cx="50" cy="50" fill="transparent" r="38" stroke="#006590" stroke-dasharray="57.3 238.7" stroke-dashoffset="-90.7" stroke-width="14"></circle>
+<!-- Segment 3: Opini 16% = 38.2 -> offset -(90.7 + 57.3) = -148 -->
+<!-- Opini (#6366f1) -->
+<circle cx="50" cy="50" fill="transparent" r="38" stroke="#6366f1" stroke-dasharray="38.2 238.7" stroke-dashoffset="-148" stroke-width="14"></circle>
+<!-- Segment 4: Liputan Khusus 12% = 28.6 -> offset -186.2 -->
+<!-- Liputan Khusus (#0284c7) -->
+<circle cx="50" cy="50" fill="transparent" r="38" stroke="#0284c7" stroke-dasharray="28.6 238.7" stroke-dashoffset="-186.2" stroke-width="14"></circle>
+<!-- Segment 5: For Her 10% = 23.9 -> offset -214.8 -->
+<!-- For Her (#ec4899) -->
+<circle cx="50" cy="50" fill="transparent" r="38" stroke="#ec4899" stroke-dasharray="23.9 238.7" stroke-dashoffset="-214.8" stroke-width="14"></circle>
+</svg>
+<!-- Donut Centered Content -->
+<div class="absolute inset-0 flex flex-col items-center justify-center text-center pointer-events-none">
+<span class="font-headline-md text-headline-md font-bold text-on-surface leading-none">1,284</span>
+<span class="font-caption text-[11px] text-on-surface-variant font-medium mt-1">Total Artikel</span>
+</div>
+</div>
+<!-- Category Legend Breakdown List -->
+<div class="space-y-2 mt-2">
+<!-- Item 1: Nasional -->
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-[#00694e]"></span>
+<span class="font-medium text-on-surface">Nasional</span>
+</div>
+<div class="flex items-center gap-2 font-caption text-caption">
+<span class="font-bold text-on-surface">488 art.</span>
+<span class="text-on-surface-variant w-8 text-right">38%</span>
+</div>
+</div>
+<!-- Item 2: Daerah -->
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-[#006590]"></span>
+<span class="font-medium text-on-surface">Daerah</span>
+</div>
+<div class="flex items-center gap-2 font-caption text-caption">
+<span class="font-bold text-on-surface">308 art.</span>
+<span class="text-on-surface-variant w-8 text-right">24%</span>
+</div>
+</div>
+<!-- Item 3: Opini -->
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-[#6366f1]"></span>
+<span class="font-medium text-on-surface">Opini</span>
+</div>
+<div class="flex items-center gap-2 font-caption text-caption">
+<span class="font-bold text-on-surface">205 art.</span>
+<span class="text-on-surface-variant w-8 text-right">16%</span>
+</div>
+</div>
+<!-- Item 4: Liputan Khusus -->
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-[#0284c7]"></span>
+<span class="font-medium text-on-surface">Liputan Khusus</span>
+</div>
+<div class="flex items-center gap-2 font-caption text-caption">
+<span class="font-bold text-on-surface">154 art.</span>
+<span class="text-on-surface-variant w-8 text-right">12%</span>
+</div>
+</div>
+<!-- Item 5: For Her -->
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-[#ec4899]"></span>
+<span class="font-medium text-on-surface">For Her</span>
+</div>
+<div class="flex items-center gap-2 font-caption text-caption">
+<span class="font-bold text-on-surface">129 art.</span>
+<span class="text-on-surface-variant w-8 text-right">10%</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Category Manager Link -->
+<a class="mt-4 pt-3 flex items-center justify-between text-secondary hover:text-primary transition-colors font-label-md text-label-md" data-path="kategori" href="#">
+<span>Kelola Kategori &amp; Rubrik</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Bottom Data Table Section: Filament PHP v3 Editorial Style -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<!-- Table Header & Filter Bar -->
+<div class="p-space-md space-y-space-md">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-sm">
+<div>
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface">
+            Manajemen Artikel Terbaru &amp; Audit SEO
+          </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Daftar artikel terpublikasi dan draf dengan live status indexing bot Google.
+          </p>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-sm py-1.5 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container font-label-md text-label-md flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+<span>Filter Lanjutan</span>
+</button>
+<button class="px-space-sm py-1.5 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container font-label-md text-label-md flex items-center gap-1">
+<span class="material-symbols-outlined text-[18px]">refresh</span>
+<span>Sinkron GSC</span>
+</button>
+</div>
+</div>
+<!-- Search & Inline Filters -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-sm">
+<!-- Search Input -->
+<div class="md:col-span-5 relative">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-[20px] text-outline">search</span>
+<input class="w-full h-10 pl-10 pr-4 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest transition-all" placeholder="Cari judul artikel, slug, atau nama reporter..." type="text"/>
+</div>
+<!-- Filter Kategori -->
+<div class="md:col-span-3">
+<select class="w-full h-10 px-3 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest transition-all">
+<option value="">Semua Kategori (5)</option>
+<option value="nasional">Nasional</option>
+<option value="daerah">Daerah</option>
+<option value="opini">Opini</option>
+<option value="liputan-khusus">Liputan Khusus</option>
+<option value="for-her">For Her</option>
+</select>
+</div>
+<!-- Filter Status Tayang -->
+<div class="md:col-span-2">
+<select class="w-full h-10 px-3 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest transition-all">
+<option value="">Status Tayang</option>
+<option value="published">Published</option>
+<option value="pending">Pending Review</option>
+<option value="draft">Draft</option>
+</select>
+</div>
+<!-- Filter Skor SEO -->
+<div class="md:col-span-2">
+<select class="w-full h-10 px-3 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest transition-all">
+<option value="">Skor SEO</option>
+<option value="optimal">&gt;= 80 (Optimal)</option>
+<option value="warning">&lt; 80 (Perlu Optimasi)</option>
+</select>
+</div>
+</div>
+</div>
+<!-- Data Table Container (Responsive Horizontal Scroll) -->
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">
+<th class="py-3 px-4 w-10">
+<input class="rounded text-primary focus:ring-primary w-4 h-4 cursor-pointer" type="checkbox"/>
+</th>
+<th class="py-3 px-4">Artikel &amp; Slug</th>
+<th class="py-3 px-4">Kategori</th>
+<th class="py-3 px-4">Penulis</th>
+<th class="py-3 px-4">Audit Skor SEO</th>
+<th class="py-3 px-4">Index Google (GSC)</th>
+<th class="py-3 px-4">Status Tayang</th>
+<th class="py-3 px-4 text-right">Aksi</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-high/40 font-body-sm text-body-sm">
+<!-- Row 1: Optimal Nasional -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3.5 px-4">
+<input class="rounded text-primary focus:ring-primary w-4 h-4 cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-3">
+<img class="w-14 h-10 rounded object-cover shadow-sm flex-shrink-0" data-alt="Gedung parlemen megah di bawah sinar matahari pagi dengan pilar putih simetris dan langit cerah, gaya jurnalisme foto editorial profesional beresolusi tinggi dengan kontras tajam." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPBtVc7IwSsxI92MfPIVjYyr61lHB8YHDRC7Bz7eKNfpxMhzyT4hEc48j-c_c6xbdDsPiKIIeuupT4Jw194bjPIGhd2rSWBpaNaP1HOJ3EeUaszj7WOnySQnFm3oMtcURqjzSle-PIHYG1kzPPYXBJ1mcWzdb2rpZ3_JQSSNADas4mdy3q00-g4ECPXFLhKlyPnHR4LEQmeNl28N32NcM0asffAZCpdHsDwmRo4A"/>
+<div class="min-w-0">
+<a class="font-label-md text-label-md font-bold text-on-surface hover:text-primary transition-colors block truncate max-w-sm" href="#">
+                    Kawal Kebijakan Baru Sektor Energi Hijau Nasional 2025
+                  </a>
+<span class="font-caption text-[11px] text-outline block truncate">/nasional/kebijakan-energi-hijau-2025</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 whitespace-nowrap">
+<span class="px-2.5 py-1 rounded-full bg-primary/10 text-primary font-label-caps text-label-caps font-bold">Nasional</span>
+</td>
+<td class="py-3.5 px-4 whitespace-nowrap">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed font-bold text-[10px]">
+                  HW
+                </div>
+<span class="font-medium text-on-surface">Hendra Wijaya</span>
+</div>
+</td>
+<td class="py-3.5 px-4 whitespace-nowrap">
+<div class="flex items-center gap-2">
+<div class="w-16 h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 92%;"></div>
+</div>
+<span class="font-bold text-primary font-caption text-caption">92/100</span>
+</div>
+</td>
+<td class="py-3.5 px-4 whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-primary-fixed-dim/40 text-on-primary-fixed-variant font-caption text-caption font-semibold">
+<span class="material-symbols-outlined text-[13px] text-primary">check_circle</span>
+                Indexed ✓
+              </span>
+</td>
+<td class="py-3.5 px-4 whitespace-nowrap">
+<span class="px-2 py-0.5 rounded-full bg-primary text-on-primary font-label-caps text-label-caps font-bold">Published</span>
+</td>
+<td class="py-3.5 px-4 text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-1">
+<button class="w-8 h-8 rounded hover:bg-surface-container text-on-surface-variant hover:text-primary flex items-center justify-center transition-colors" title="Edit Berita">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="w-8 h-8 rounded hover:bg-surface-container text-on-surface-variant hover:text-secondary flex items-center justify-center transition-colors" title="Lihat Pratinjau">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="w-8 h-8 rounded hover:bg-surface-container text-on-surface-variant flex items-center justify-center transition-colors" title="Opsi Lain">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: Daerah Perlu Optimasi -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3.5 px-4">
+<input class="rounded text-primary focus:ring-primary w-4 h-4 cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-3">
+<img class="w-14 h-10 rounded object-cover shadow-sm flex-shrink-0" data-alt="Pemandangan pelabuhan peti kemas tradisional di pesisir Selat Makassar pada waktu senja, crane industri dan kapal barang terapung tenang dengan pantulan air laut keemasan berkelas jurnalistik." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBsyAtvp3NVYk3nlUKwVUYvMvFtD5NOZNOCU93fNjPklwQeZ4c38-BXeiuT8uxiMK_xpGkDaUfZIRI2rCp94c--PkfRvYPfNCyAP1Ws6xyvthGsg4HrcYro2irqS600WFBq87Ig7c2Mfw0Z64H3v5f4aeiKDGhD0eDSFChnOK5RWj5cyfnVgG0nVYtPsT_G0FyyWgLtxEf5X5l3AEnln4ITdloBYTTFoOqDbn6PWQ"/>
+<div class="min-w-0">
+<a class="font-label-md text-label-md font-bold text-on-surface hover:text-primary transition-colors block truncate max-w-sm" href="#">
+                    Revitalisasi Jalur Logistik Maritim Makassar Rampung
+                  </a>
+<span class="font-caption text-[11px] text-outline block truncate">/daerah/jalur-logistik-maritim-makassar</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 whitespace-nowrap">
+<span class="px-2.5 py-1 rounded-full bg-secondary/10 text-secondary font-label-caps text-label-caps font-bold">Daerah</span>
+</td>
+<td class="py-3.5 px-4 whitespace-nowrap">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed font-bold text-[10px]">
+                  RD
+                </div>
+<span class="font-medium text-on-surface">Rahma Dewi</span>
+</div>
+</td>
+<td class="py-3.5 px-4 whitespace-nowrap">
+<div class="flex items-center gap-2">
+<div class="w-16 h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-tertiary-container rounded-full" style="width: 74%;"></div>
+</div>
+<span class="font-bold text-tertiary font-caption text-caption">74/100</span>
+</div>
+</td>
+<td class="py-3.5 px-4 whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-caption text-caption font-semibold">
+<span class="material-symbols-outlined text-[13px] text-outline">pending</span>
+                Crawled - Pending
+              </span>
+</td>
+<td class="py-3.5 px-4 whitespace-nowrap">
+<span class="px-2 py-0.5 rounded-full bg-primary text-on-primary font-label-caps text-label-caps font-bold">Published</span>
+</td>
+<td class="py-3.5 px-4 text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-1">
+<button class="w-8 h-8 rounded hover:bg-surface-container text-on-surface-variant hover:text-primary flex items-center justify-center transition-colors" title="Edit Berita">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="w-8 h-8 rounded hover:bg-surface-container text-on-surface-variant hover:text-secondary flex items-center justify-center transition-colors" title="Lihat Pratinjau">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="w-8 h-8 rounded hover:bg-surface-container text-on-surface-variant flex items-center justify-center transition-colors" title="Opsi Lain">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: Opini Pending Review -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3.5 px-4">
+<input class="rounded text-primary focus:ring-primary w-4 h-4 cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-3">
+<img class="w-14 h-10 rounded object-cover shadow-sm flex-shrink-0" data-alt="Pena bulu antik diletakkan di atas tumpukan dokumen jurnalistik dan buku terbuka dengan pencahayaan hangat dari lampu meja belajar kayu gelap bernuansa intelektual mendalam." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGYdgQ8Hpe-0CoFewB6K4uDTxhUmsdcZqki5Rsyibvey3ipddXhv4ZCMVKDgpji8WPqL66OReY33K-zXHJmqQl1BqVVkLVsDwp-PfdVcZEpli1vXVIYqB0G-hJKaoI7GZBDpBnrvg0XHWt374IUkgYKeROEfB1n2GU1EySzMu1HFs5njgyZY4Tl9g1CAXbGkNbCE1OAbZLI3T9NxsHIFdgV0F7HYzdKHVa3FU5og"/>
+<div class="min-w-0">
+<a class="font-label-md text-label-md font-bold text-on-surface hover:text-primary transition-colors block truncate max-w-sm" href="#">
+                    Tantangan Etika AI Generatif bagi Jurnalisme Investigasi
+                  </a>
+<span class="font-caption text-[11px] text-outline block truncate">/opini/etika-ai-generatif-jurnalisme</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 whitespace-nowrap">
+<span class="px-2.5 py-1 rounded-full bg-[#6366f1]/10 text-[#4338ca] font-label-caps text-label-caps font-bold">Opini</span>
+</td>
+<td class="py-3.5 px-4 whitespace-nowrap">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed font-bold text-[10px]">
+                  DP
+                </div>
+<span class="font-medium text-on-surface">Dimas Pratama</span>
+</div>
+</td>
+<td class="py-3.5 px-4 whitespace-nowrap">
+<div class="flex items-center gap-2">
+<div class="w-16 h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 86%;"></div>
+</div>
+<span class="font-bold text-primary font-caption text-caption">86/100</span>
+</div>
+</td>
+<td class="py-3.5 px-4 whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-caption text-caption">
+<span class="material-symbols-outlined text-[13px] text-outline">schedule</span>
+                Draft Belum Tayang
+              </span>
+</td>
+<td class="py-3.5 px-4 whitespace-nowrap">
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-caps text-label-caps font-bold">Pending Review</span>
+</td>
+<td class="py-3.5 px-4 text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-1">
+<button class="w-8 h-8 rounded hover:bg-surface-container text-on-surface-variant hover:text-primary flex items-center justify-center transition-colors" title="Edit Berita">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="w-8 h-8 rounded hover:bg-surface-container text-on-surface-variant hover:text-secondary flex items-center justify-center transition-colors" title="Lihat Pratinjau">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="w-8 h-8 rounded hover:bg-surface-container text-on-surface-variant flex items-center justify-center transition-colors" title="Opsi Lain">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4: Liputan Khusus -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3.5 px-4">
+<input class="rounded text-primary focus:ring-primary w-4 h-4 cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-3">
+<img class="w-14 h-10 rounded object-cover shadow-sm flex-shrink-0" data-alt="Stasiun radar pengamatan satelit cuaca modern di puncak gunung berselimut kabut tipis fajar, instrumen ilmiah canggih berbalut warna logam teal dan biru langit jernih." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEzxTmvPsNPfVb_8oOghaTFh07N2UeuaxWJINWPQRmk5VZq-PfEz_juaO8GHvbl9PIqmQW5aQy93Wp2mX6rbrOnrkigNzuaYSMLL6j-fDTRvVA-d-F39RycKaja3DlnNOpR1YDjU3DlidkIH_H62lDpS8nNz-YQ5UbZCMyPGhLvb1_Py78eYuPJnxKibvxZeIeqhp0N7lwnw1QH7zj_8EKWX6DeGq7BEHxlyLPwA"/>
+<div class="min-w-0">
+<a class="font-label-md text-label-md font-bold text-on-surface hover:text-primary transition-colors block truncate max-w-sm" href="#">
+                    Investigasi: Anomali Iklim dan Ketahanan Pangan Pesisir
+                  </a>
+<span class="font-caption text-[11px] text-outline block truncate">/liputan-khusus/anomali-iklim-pangan</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 whitespace-nowrap">
+<span class="px-2.5 py-1 rounded-full bg-[#0284c7]/10 text-[#0369a1] font-label-caps text-label-caps font-bold">Liputan Khusus</span>
+</td>
+<td class="py-3.5 px-4 whitespace-nowrap">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-secondary-fixed-dim flex items-center justify-center text-on-secondary-fixed font-bold text-[10px]">
+                  AS
+                </div>
+<span class="font-medium text-on-surface">Agung Santoso</span>
+</div>
+</td>
+<td class="py-3.5 px-4 whitespace-nowrap">
+<div class="flex items-center gap-2">
+<div class="w-16 h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 95%;"></div>
+</div>
+<span class="font-bold text-primary font-caption text-caption">95/100</span>
+</div>
+</td>
+<td class="py-3.5 px-4 whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-primary-fixed-dim/40 text-on-primary-fixed-variant font-caption text-caption font-semibold">
+<span class="material-symbols-outlined text-[13px] text-primary">check_circle</span>
+                Indexed ✓
+              </span>
+</td>
+<td class="py-3.5 px-4 whitespace-nowrap">
+<span class="px-2 py-0.5 rounded-full bg-primary text-on-primary font-label-caps text-label-caps font-bold">Published</span>
+</td>
+<td class="py-3.5 px-4 text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-1">
+<button class="w-8 h-8 rounded hover:bg-surface-container text-on-surface-variant hover:text-primary flex items-center justify-center transition-colors" title="Edit Berita">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="w-8 h-8 rounded hover:bg-surface-container text-on-surface-variant hover:text-secondary flex items-center justify-center transition-colors" title="Lihat Pratinjau">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="w-8 h-8 rounded hover:bg-surface-container text-on-surface-variant flex items-center justify-center transition-colors" title="Opsi Lain">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 5: For Her -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3.5 px-4">
+<input class="rounded text-primary focus:ring-primary w-4 h-4 cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-3">
+<img class="w-14 h-10 rounded object-cover shadow-sm flex-shrink-0" data-alt="Potret inspiratif sosok perempuan pemimpin wirausaha sosial di studio bernuansa arsitektur modern minimalis, ekspresi percaya diri dengan busana profesional kontemporer berkelas." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDH26Z9pMbSntDXodEpVsMYunXobc_q4gtU9sPpW-9mT_aTfid1Dvyx7PstR_UGt9iSZ1geebqVHnUGMpMFOri_Z24orHqPUdYa5LRoii4kBxHZIMulBVWu1QnJeRM6DEVfMCAQ50wNiXTV2vRWEDNcxqJMYuf7BnOsebSWareQ2LVyWx__v6oPCKkOQRmLT0qxWuDdG6Qxnl3u8jAn2Q_NK6t8shR80WxDiwC7yA"/>
+<div class="min-w-0">
+<a class="font-label-md text-label-md font-bold text-on-surface hover:text-primary transition-colors block truncate max-w-sm" href="#">
+                    Kiprah Srikandi FinTech: Membuka Ruang Inklusi Finansial
+                  </a>
+<span class="font-caption text-[11px] text-outline block truncate">/for-her/srikandi-fintech-inklusi-finansial</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 whitespace-nowrap">
+<span class="px-2.5 py-1 rounded-full bg-[#ec4899]/10 text-[#be185d] font-label-caps text-label-caps font-bold">For Her</span>
+</td>
+<td class="py-3.5 px-4 whitespace-nowrap">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-surface-container-highest flex items-center justify-center text-on-surface font-bold text-[10px]">
+                  NA
+                </div>
+<span class="font-medium text-on-surface">Nadira Azzahra</span>
+</div>
+</td>
+<td class="py-3.5 px-4 whitespace-nowrap">
+<div class="flex items-center gap-2">
+<div class="w-16 h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 89%;"></div>
+</div>
+<span class="font-bold text-primary font-caption text-caption">89/100</span>
+</div>
+</td>
+<td class="py-3.5 px-4 whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-primary-fixed-dim/40 text-on-primary-fixed-variant font-caption text-caption font-semibold">
+<span class="material-symbols-outlined text-[13px] text-primary">check_circle</span>
+                Indexed ✓
+              </span>
+</td>
+<td class="py-3.5 px-4 whitespace-nowrap">
+<span class="px-2 py-0.5 rounded-full bg-primary text-on-primary font-label-caps text-label-caps font-bold">Published</span>
+</td>
+<td class="py-3.5 px-4 text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-1">
+<button class="w-8 h-8 rounded hover:bg-surface-container text-on-surface-variant hover:text-primary flex items-center justify-center transition-colors" title="Edit Berita">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="w-8 h-8 rounded hover:bg-surface-container text-on-surface-variant hover:text-secondary flex items-center justify-center transition-colors" title="Lihat Pratinjau">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="w-8 h-8 rounded hover:bg-surface-container text-on-surface-variant flex items-center justify-center transition-colors" title="Opsi Lain">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 6: Draft Editorial -->
+<tr class="hover:bg-surface-container-low/60 transition-colors">
+<td class="py-3.5 px-4">
+<input class="rounded text-primary focus:ring-primary w-4 h-4 cursor-pointer" type="checkbox"/>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-3">
+<div class="w-14 h-10 rounded bg-surface-container flex items-center justify-center text-outline flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">image</span>
+</div>
+<div class="min-w-0">
+<a class="font-label-md text-label-md font-bold text-on-surface hover:text-primary transition-colors block truncate max-w-sm" href="#">
+                    Analisis Dampak Fluktuasi Suku Bunga terhadap UMKM Retail
+                  </a>
+<span class="font-caption text-[11px] text-outline block truncate">/nasional/dampak-fluktuasi-suku-bunga-umkm</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 whitespace-nowrap">
+<span class="px-2.5 py-1 rounded-full bg-primary/10 text-primary font-label-caps text-label-caps font-bold">Nasional</span>
+</td>
+<td class="py-3.5 px-4 whitespace-nowrap">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed font-bold text-[10px]">
+                  HW
+                </div>
+<span class="font-medium text-on-surface">Hendra Wijaya</span>
+</div>
+</td>
+<td class="py-3.5 px-4 whitespace-nowrap">
+<div class="flex items-center gap-2">
+<div class="w-16 h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-outline rounded-full" style="width: 50%;"></div>
+</div>
+<span class="font-bold text-outline font-caption text-caption">50/100</span>
+</div>
+</td>
+<td class="py-3.5 px-4 whitespace-nowrap">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-caption text-caption">
+<span class="material-symbols-outlined text-[13px] text-outline">block</span>
+                Noindex (Draf)
+              </span>
+</td>
+<td class="py-3.5 px-4 whitespace-nowrap">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-caps text-label-caps font-bold">Draft</span>
+</td>
+<td class="py-3.5 px-4 text-right whitespace-nowrap">
+<div class="flex items-center justify-end gap-1">
+<button class="w-8 h-8 rounded hover:bg-surface-container text-on-surface-variant hover:text-primary flex items-center justify-center transition-colors" title="Edit Berita">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="w-8 h-8 rounded hover:bg-surface-container text-on-surface-variant hover:text-secondary flex items-center justify-center transition-colors" title="Lihat Pratinjau">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+</button>
+<button class="w-8 h-8 rounded hover:bg-surface-container text-on-surface-variant flex items-center justify-center transition-colors" title="Opsi Lain">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Pagination & Counter Bar -->
+<div class="p-space-md bg-surface-container-low/40 flex flex-col sm:flex-row items-center justify-between gap-space-sm font-body-sm text-body-sm">
+<div class="flex items-center gap-space-sm">
+<span class="text-on-surface-variant">
+          Menampilkan <strong class="text-on-surface font-semibold">1-6</strong> dari <strong class="text-on-surface font-semibold">1,284</strong> total data
+        </span>
+<div class="flex items-center gap-1 text-on-surface-variant font-caption text-caption">
+<span>| Per halaman:</span>
+<select class="h-7 px-2 rounded bg-surface-container-lowest text-on-surface focus:outline-none border-0 text-caption font-semibold">
+<option>10</option>
+<option>25</option>
+<option>50</option>
+</select>
+</div>
+</div>
+<!-- Filament Page Navigation Buttons -->
+<div class="flex items-center gap-1 font-label-md text-label-md">
+<button class="w-8 h-8 rounded bg-surface-container-lowest text-on-surface-variant flex items-center justify-center hover:bg-surface-container hover:text-on-surface transition-colors disabled:opacity-40" disabled="">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<button class="w-8 h-8 rounded bg-primary text-on-primary font-bold flex items-center justify-center shadow-sm">1</button>
+<button class="w-8 h-8 rounded bg-surface-container-lowest text-on-surface hover:bg-surface-container flex items-center justify-center transition-colors">2</button>
+<button class="w-8 h-8 rounded bg-surface-container-lowest text-on-surface hover:bg-surface-container flex items-center justify-center transition-colors">3</button>
+<span class="px-1 text-outline">...</span>
+<button class="w-8 h-8 rounded bg-surface-container-lowest text-on-surface hover:bg-surface-container flex items-center justify-center transition-colors">128</button>
+<button class="w-8 h-8 rounded bg-surface-container-lowest text-on-surface-variant flex items-center justify-center hover:bg-surface-container hover:text-on-surface transition-colors">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Simple micro-interaction for period selection
+  const periodBtn = document.getElementById('periodBtn');
+  if (periodBtn) {
+    periodBtn.addEventListener('click', function() {
+      const periods = ['7 Hari Terakhir', '14 Hari Terakhir', '30 Hari Terakhir', 'Bulan Ini (Mei)'];
+      const current = this.querySelector('span:nth-child(2)').innerText;
+      let nextIndex = (periods.indexOf(current) + 1) % periods.length;
+      if (nextIndex < 0) nextIndex = 0;
+      this.querySelector('span:nth-child(2)').innerText = periods[nextIndex];
+    });
+  }
+</script></main></div></body></html>
